@@ -50,6 +50,16 @@
   function say(msg) { const s = $("status"); if (!s) return; s.textContent = msg; setTimeout(() => { if (s.textContent === msg) s.textContent = ""; }, 2500); }
   function open(url) { window.open(url, "_blank", "noopener,noreferrer,width=620,height=680"); }
   const enc = encodeURIComponent;
+  // On phones, Facebook's web share page opens the Facebook app without the post, so the Facebook
+  // button uses the phone's own share menu there (pick Facebook in it).
+  const phone = !!(window.matchMedia && window.matchMedia("(pointer: coarse)").matches);
+  function shareFacebook(r) {
+    if (phone && navigator.share) {
+      navigator.share({ title: "Which Philosopher Are You?", text: r.text, url: r.link }).catch(() => {});
+    } else {
+      open(`https://${phone ? "m" : "www"}.facebook.com/sharer/sharer.php?u=${enc(r.link)}`);
+    }
+  }
 
   row.addEventListener("click", e => {
     const b = e.target.closest("[data-share]");
@@ -59,7 +69,7 @@
     const kind = b.dataset.share;
     if (kind === "x") open(`https://x.com/intent/post?text=${enc(r.text)}&url=${enc(r.link)}`);
     if (kind === "bluesky") open(`https://bsky.app/intent/compose?text=${enc(r.text + " " + r.link)}`);
-    if (kind === "facebook") open(`https://www.facebook.com/sharer/sharer.php?u=${enc(r.link)}`);
+    if (kind === "facebook") shareFacebook(r);
     if (kind === "link") {
       const out = $("copyOut");
       const fallback = () => { if (out) { out.hidden = false; out.value = r.link; out.focus(); out.select(); } say("Select and copy the link below."); };
