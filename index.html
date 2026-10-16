@@ -1,0 +1,1454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Which Philosopher Are You?</title>
+<meta name="description" content="Fifty-four questions about how you think, what you believe and how you live, matched against forty-four philosophers from Confucius to David Chalmers. About 8 minutes.">
+<link rel="canonical" href="https://leonard109090602.github.io/which-philosopher/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Which Philosopher Are You?">
+<meta property="og:title" content="Which Philosopher Are You?">
+<meta property="og:description" content="Fifty-four questions about how you think, what you believe and how you live, matched against forty-four philosophers from Confucius to David Chalmers. About 8 minutes.">
+<meta property="og:url" content="https://leonard109090602.github.io/which-philosopher/">
+<meta property="og:image" content="https://leonard109090602.github.io/which-philosopher/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Which philosopher are you? A personality and worldview test: 54 questions, 44 philosophers.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Which Philosopher Are You?">
+<meta name="twitter:description" content="Fifty-four questions about how you think, what you believe and how you live, matched against forty-four philosophers from Confucius to David Chalmers. About 8 minutes.">
+<meta name="twitter:image" content="https://leonard109090602.github.io/which-philosopher/og-image.png">
+<meta name="twitter:image:alt" content="Which philosopher are you? A personality and worldview test: 54 questions, 44 philosophers.">
+<style>:root{color-scheme:light}*{box-sizing:border-box}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..800;1,6..96,400..800&family=Schibsted+Grotesk:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400..700&display=swap">
+<style>
+/* Layout: one left-aligned reading column for intro and quiz; results open into a wider two-column sheet with a bipolar profile chart. */
+:root {
+  --paper: #EEF1F5;
+  --surface: #FFFFFF;
+  --ink: #13233B;
+  --ink-2: #4B5A72;
+  --rule: #CBD3DF;
+  --prussian: #1F4F7D;
+  --prussian-wash: #DCE6F1;
+  --ochre: #B97B17;
+  --ochre-ink: #8A5809;
+  --ochre-wash: #F5E6C6;
+  --a-2: #1F4F7D; --a-1: #8FB0D2; --a0: #C9D0DA; --a1: #E3C27E; --a2: #B97B17;
+  --display: "Bodoni Moda", "Didot", "Bodoni 72", "Bodoni MT", Georgia, serif;
+  --body: "Schibsted Grotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --text: "Source Serif 4", "Source Serif Pro", Georgia, "Times New Roman", serif;
+  --s-1: 0.8125rem;
+  --s0: 1rem;
+  --s1: 1.25rem;
+  --s2: 1.5625rem;
+  --s3: clamp(1.6rem, 4.2vw, 2.3rem);
+  --s4: clamp(2.4rem, 7vw, 4rem);
+  --s5: clamp(2.9rem, 11vw, 6.6rem);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #0C1420; --surface: #142033; --ink: #E7ECF3; --ink-2: #9DAABD; --rule: #283953;
+    --prussian: #8DBBE8; --prussian-wash: #1A2D47; --ochre: #E2A640; --ochre-ink: #EDB85A; --ochre-wash: #36290F;
+    --a-2: #5E93C8; --a-1: #34587F; --a0: #3A4660; --a1: #7A5A22; --a2: #E2A640;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #0C1420; --surface: #142033; --ink: #E7ECF3; --ink-2: #9DAABD; --rule: #283953;
+  --prussian: #8DBBE8; --prussian-wash: #1A2D47; --ochre: #E2A640; --ochre-ink: #EDB85A; --ochre-wash: #36290F;
+  --a-2: #5E93C8; --a-1: #34587F; --a0: #3A4660; --a1: #7A5A22; --a2: #E2A640;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+body { background: var(--paper); color: var(--ink); font-family: var(--body); font-size: var(--s0); line-height: 1.55; -webkit-font-smoothing: antialiased; }
+button { font: inherit; color: inherit; }
+h1, h2, h3 { margin: 0; font-weight: inherit; text-wrap: balance; }
+p { margin: 0; }
+:focus-visible { outline: 2px solid var(--prussian); outline-offset: 3px; border-radius: 4px; }
+
+.wrap { max-width: 47rem; margin: 0 auto; padding-inline: 20px; padding-block: 28px 72px; display: grid; gap: 40px; }
+.wrap.wide { max-width: 70rem; }
+
+.label { font-size: var(--s-1); font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-2); }
+.display { font-family: var(--display); font-optical-sizing: auto; }
+
+.masthead { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; border-bottom: 1px solid var(--rule); padding-bottom: 12px; }
+.wordmark { background: none; border: 0; padding: 0; cursor: pointer; font-family: var(--display); font-style: italic; font-size: var(--s1); font-weight: 500; }
+.wordmark:hover { color: var(--ochre-ink); }
+
+/* Buttons */
+.btn { display: inline-flex; align-items: center; gap: 8px; border-radius: 999px; padding: 12px 22px; font-weight: 600; cursor: pointer; border: 1.5px solid var(--ink); background: transparent; transition: background .15s, color .15s; }
+.btn:hover { background: var(--ink); color: var(--paper); }
+.btn.primary { background: var(--ink); color: var(--paper); }
+.btn.primary:hover { background: var(--ochre-ink); border-color: var(--ochre-ink); color: var(--paper); }
+.btn.quiet { border-color: var(--rule); color: var(--ink-2); }
+.btn.quiet:hover { background: var(--surface); color: var(--ink); border-color: var(--ink-2); }
+.linkbtn { background: none; border: 0; padding: 6px 0; cursor: pointer; color: var(--ink-2); font-weight: 500; }
+.linkbtn:hover:not(:disabled) { color: var(--ink); }
+.linkbtn:disabled { opacity: .35; cursor: default; }
+
+/* Intro */
+.intro-head { display: grid; gap: 20px; padding-top: 12px; }
+.intro-head h1 { font-size: var(--s5); line-height: 0.95; font-weight: 500; letter-spacing: -0.015em; }
+.intro-head h1 em { color: var(--ochre-ink); font-weight: 500; }
+.lede { font-size: var(--s1); color: var(--ink-2); max-width: 36em; line-height: 1.5; }
+.cta-row { display: flex; flex-wrap: wrap; gap: 12px 16px; align-items: center; }
+.cta-row .meta { color: var(--ink-2); font-size: var(--s-1); }
+
+.dims { display: grid; gap: 14px; }
+.dim-grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 1px solid var(--rule); }
+.dim-grid li { padding: 12px 12px 12px 0; border-bottom: 1px solid var(--rule); display: grid; gap: 2px; min-width: 0; }
+.dim-grid .dn { font-size: var(--s-1); font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-2); }
+.dim-grid .dp { font-family: var(--display); font-size: 1.05rem; line-height: 1.25; }
+.dim-grid .dp i { color: var(--ink-2); font-style: normal; padding-inline: 2px; }
+
+.roster { display: grid; gap: 18px; }
+.era { display: grid; grid-template-columns: 11rem minmax(0, 1fr); gap: 4px 20px; align-items: baseline; padding-top: 14px; border-top: 1px solid var(--rule); }
+.era h3 { font-size: var(--s-1); font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-2); }
+.era .names { font-family: var(--display); font-size: var(--s1); line-height: 1.5; }
+.era .names .dot { color: var(--ochre); padding-inline: 0.35em; }
+
+/* Quiz */
+.progress { display: grid; gap: 10px; }
+.progress-top { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+.part-label { font-size: var(--s-1); font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-2); min-width: 0; }
+.part-label b { color: var(--ochre-ink); font-weight: 700; margin-right: 6px; }
+.count { font-variant-numeric: tabular-nums; color: var(--ink-2); font-size: var(--s-1); white-space: nowrap; }
+.count b { color: var(--ink); font-weight: 600; }
+.segs { display: flex; gap: 4px; }
+.seg { height: 4px; background: var(--rule); border-radius: 2px; overflow: hidden; }
+.seg span { display: block; height: 100%; width: 0; background: var(--ochre); transition: width .25s ease; }
+
+.qcard { display: grid; gap: 34px; padding-block: 28px 8px; min-height: 22rem; align-content: start; }
+/* Questions: one readable text serif, same size, weight and colour for every question type */
+.prompt { font-family: var(--text); font-optical-sizing: auto; font-size: clamp(1.4rem, 3.4vw, 1.9rem); line-height: 1.32; font-weight: 500; color: var(--ink); text-wrap: pretty; min-height: 3.96em; }
+.prompt.stem { min-height: 0; }
+.pair { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 24px; }
+.pair p { font-family: var(--text); font-optical-sizing: auto; font-size: clamp(1.15rem, 2.6vw, 1.4rem); line-height: 1.35; font-weight: 600; }
+.pair .pl { color: var(--prussian); }
+.pair .pr { color: var(--ochre-ink); text-align: right; }
+
+.scale-wrap { display: grid; gap: 10px; max-width: 34rem; }
+.scale { display: flex; justify-content: space-between; align-items: center; }
+.opt { --sz: 2.1rem; width: var(--sz); height: var(--sz); border-radius: 50%; border: 2px solid var(--rule); background: transparent; cursor: pointer; padding: 0; transition: background .15s, transform .15s; flex: none; }
+.opt[data-v="-2"], .opt[data-v="2"] { --sz: 3.4rem; }
+.opt[data-v="-1"], .opt[data-v="1"] { --sz: 2.7rem; }
+.opt[data-v="-2"], .opt[data-v="-1"] { border-color: var(--prussian); }
+.opt[data-v="2"], .opt[data-v="1"] { border-color: var(--ochre); }
+.opt[data-v="-2"]:hover, .opt[data-v="-1"]:hover { background: var(--prussian-wash); }
+.opt[data-v="2"]:hover, .opt[data-v="1"]:hover { background: var(--ochre-wash); }
+.opt[data-v="0"]:hover { background: var(--surface); }
+.opt[aria-checked="true"][data-v="-2"], .opt[aria-checked="true"][data-v="-1"] { background: var(--prussian); }
+.opt[aria-checked="true"][data-v="2"], .opt[aria-checked="true"][data-v="1"] { background: var(--ochre); }
+.opt[aria-checked="true"][data-v="0"] { background: var(--ink-2); border-color: var(--ink-2); }
+.opt:active { transform: scale(0.94); }
+.scale-labels { display: grid; grid-template-columns: 1fr auto 1fr; font-size: var(--s-1); font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; }
+.scale-labels .sl { color: var(--prussian); }
+.scale-labels .sm { color: var(--ink-2); font-weight: 500; }
+.scale-labels .sr { color: var(--ochre-ink); text-align: right; }
+
+.quiz-nav { display: flex; justify-content: space-between; align-items: center; gap: 12px; border-top: 1px solid var(--rule); padding-top: 14px; }
+.quiz-nav .hint { color: var(--ink-2); font-size: var(--s-1); }
+.quiz-nav .navs { display: flex; gap: 20px; }
+
+.fade-in { animation: fadeIn .28s ease both; }
+@keyframes fadeIn { from { opacity: 0.001; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+
+/* Results */
+.result-hero { display: grid; gap: 10px; padding-top: 8px; }
+.result-hero .eyebrow { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+.pct-badge { font-variant-numeric: tabular-nums; background: var(--ochre-wash); color: var(--ochre-ink); font-weight: 700; padding: 2px 10px; border-radius: 999px; font-size: var(--s-1); letter-spacing: 0.04em; }
+.result-name { font-size: var(--s5); line-height: 0.95; font-weight: 500; letter-spacing: -0.015em; overflow-wrap: anywhere; }
+.result-sub { font-size: var(--s1); color: var(--ink-2); }
+.result-sub .ep { font-family: var(--display); font-style: italic; color: var(--ochre-ink); font-size: var(--s2); }
+
+.result-body { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 40px 56px; align-items: start; }
+.result-main { display: grid; gap: 24px; }
+.quote { margin: 0; display: grid; gap: 10px; }
+.quote p { font-family: var(--display); font-style: italic; font-size: var(--s2); line-height: 1.3; }
+.quote cite { font-style: normal; font-size: var(--s-1); letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-2); font-weight: 500; }
+.blurb { font-size: 1.0625rem; max-width: 38em; }
+.read { font-size: var(--s-1); color: var(--ink-2); }
+.read b { display: block; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 2px; }
+.read span { font-family: var(--display); font-size: var(--s1); color: var(--ink); }
+.note { font-size: var(--s-1); color: var(--ink-2); background: var(--surface); border: 1px solid var(--rule); border-radius: 8px; padding: 10px 14px; }
+
+.why { display: grid; gap: 24px; background: var(--surface); border: 1px solid var(--rule); border-radius: 14px; padding: 22px 24px; }
+.why ul { list-style: none; margin: 8px 0 0; padding: 0; display: grid; gap: 10px; }
+.why li { display: grid; grid-template-columns: 14px minmax(0, 1fr); gap: 10px; align-items: baseline; }
+.why li::before { content: ""; width: 10px; height: 10px; border-radius: 50%; transform: translateY(1px); }
+.why .agree li::before { background: var(--ochre); }
+.why .argue li::before { border: 2px solid var(--prussian); width: 10px; height: 10px; }
+.why .empty { color: var(--ink-2); }
+
+.sect { display: grid; gap: 16px; }
+.sect-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 8px 16px; border-bottom: 1px solid var(--rule); padding-bottom: 10px; }
+.sect-head h2 { font-family: var(--display); font-size: var(--s3); font-weight: 500; line-height: 1.15; }
+
+.runners { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+.pcard { text-align: left; background: var(--surface); border: 1px solid var(--rule); border-radius: 12px; padding: 14px 16px; cursor: pointer; display: grid; gap: 4px; align-content: start; transition: border-color .15s; min-width: 0; }
+.pcard:hover { border-color: var(--ink-2); }
+.pcard[aria-pressed="true"] { border-color: var(--ochre); box-shadow: inset 0 0 0 1px var(--ochre); }
+.pcard .rk { font-size: var(--s-1); color: var(--ink-2); font-variant-numeric: tabular-nums; display: flex; justify-content: space-between; }
+.pcard .rk b { color: var(--ochre-ink); }
+.pcard .nm { font-family: var(--display); font-size: var(--s1); font-weight: 600; line-height: 1.2; }
+.pcard .ep { font-size: var(--s-1); color: var(--ink-2); }
+.opposite { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 10px; color: var(--ink-2); }
+.opposite .linkbtn { color: var(--ink); font-family: var(--display); font-size: var(--s1); font-weight: 600; text-decoration: underline; text-decoration-color: var(--rule); text-underline-offset: 4px; }
+
+.cmp-card { display: grid; gap: 6px; }
+.cmp-card .who { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; }
+.cmp-card .who .nm { font-family: var(--display); font-size: var(--s2); font-weight: 600; }
+.cmp-card .who .ep { font-family: var(--display); font-style: italic; color: var(--ochre-ink); }
+.cmp-card .who .dt { color: var(--ink-2); font-size: var(--s-1); }
+.cmp-card .bl { color: var(--ink-2); max-width: 46em; }
+.legend { display: flex; gap: 18px; font-size: var(--s-1); color: var(--ink-2); }
+.legend span { display: inline-flex; align-items: center; gap: 6px; }
+.legend .you { width: 12px; height: 12px; border-radius: 50%; background: var(--ochre); }
+.legend .them { width: 14px; height: 14px; border-radius: 50%; border: 2px solid var(--prussian); }
+
+.chart { display: grid; }
+.row { display: grid; grid-template-columns: 8rem 7.5rem minmax(0, 1fr) 7.5rem; grid-template-areas: "name neg track pos"; align-items: center; gap: 14px; padding-block: 9px; border-bottom: 1px solid var(--rule); }
+.row .an { grid-area: name; font-size: var(--s-1); font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-2); }
+.row .neg { grid-area: neg; text-align: right; font-family: var(--display); color: var(--ink-2); }
+.row .pos { grid-area: pos; font-family: var(--display); color: var(--ink-2); }
+.row .lean { color: var(--ink); font-weight: 700; }
+.track { grid-area: track; position: relative; height: 22px; }
+.track::before { content: ""; position: absolute; left: 0; right: 0; top: 50%; height: 1px; background: var(--rule); }
+.track .mid { position: absolute; left: 50%; top: 4px; bottom: 4px; width: 1px; background: var(--ink-2); opacity: .45; }
+.track .tick { position: absolute; top: 8px; bottom: 8px; width: 1px; background: var(--rule); }
+.track .gap { position: absolute; top: 50%; height: 3px; transform: translateY(-50%); background: var(--ochre-wash); border-radius: 2px; }
+.track .mk { position: absolute; top: 50%; transform: translate(-50%, -50%); border-radius: 50%; transition: left .35s ease; }
+.track .them { width: 18px; height: 18px; border: 2px solid var(--prussian); background: transparent; }
+.track .you { width: 11px; height: 11px; background: var(--ochre); }
+
+.ranking { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 40px; }
+.ranking li { border-bottom: 1px solid var(--rule); }
+.rk-btn { width: 100%; background: none; border: 0; cursor: pointer; display: grid; grid-template-columns: 1.8rem minmax(0, 11rem) minmax(0, 1fr) 2.8rem; align-items: center; gap: 10px; padding: 8px 4px; text-align: left; }
+.rk-btn:hover { background: var(--surface); }
+.rk-btn[aria-pressed="true"] { background: var(--ochre-wash); }
+.rk-btn .n { font-variant-numeric: tabular-nums; color: var(--ink-2); font-size: var(--s-1); }
+.rk-btn .nm { font-family: var(--display); font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.rk-btn .bar { height: 6px; background: var(--rule); border-radius: 3px; overflow: hidden; }
+.rk-btn .bar span { display: block; height: 100%; background: var(--prussian); border-radius: 3px; }
+.rk-btn .p { font-variant-numeric: tabular-nums; text-align: right; font-size: var(--s-1); font-weight: 600; }
+
+.actions { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.copy-out { width: 100%; min-height: 5rem; font: inherit; font-size: var(--s-1); padding: 10px; border-radius: 8px; border: 1px solid var(--rule); background: var(--surface); color: var(--ink); }
+.status { font-size: var(--s-1); color: var(--ochre-ink); font-weight: 600; }
+.method { font-size: var(--s-1); color: var(--ink-2); max-width: 52em; border-top: 1px solid var(--rule); padding-top: 16px; }
+.credits { font-size: var(--s-1); color: var(--ink-2); }
+.credits p { max-width: 52em; }
+.crowd { display: grid; gap: 12px; background: var(--surface); border: 1px solid var(--rule); border-radius: 14px; padding: 22px 24px; max-width: 46rem; }
+.crowd p { max-width: 40em; }
+.crowd .fine { font-size: var(--s-1); color: var(--ink-2); }
+
+/* Statistics */
+.stats-head { display: grid; gap: 12px; }
+.stats-head h1 { font-size: var(--s4); line-height: 1; font-weight: 500; letter-spacing: -0.01em; }
+.stats-msg { color: var(--ink-2); font-size: var(--s1); }
+.ph-head, .ph-row { display: grid; grid-template-columns: 1.8rem minmax(0, 12rem) minmax(0, 1fr) 3.2rem 4.6rem; gap: 10px; align-items: center; }
+.ph-head { font-size: var(--s-1); font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-2); padding-bottom: 6px; border-bottom: 1px solid var(--rule); }
+.ph-head .r, .ph-row .r { text-align: right; }
+.ph-list { list-style: none; margin: 0; padding: 0; }
+.ph-row { padding: 7px 0; border-bottom: 1px solid var(--rule); font-variant-numeric: tabular-nums; }
+.ph-row .n { color: var(--ink-2); font-size: var(--s-1); }
+.ph-row .nm { font-family: var(--display); font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.ph-row.mine { background: var(--ochre-wash); }
+.ph-row .bar { height: 8px; background: var(--rule); border-radius: 4px; overflow: hidden; }
+.ph-row .bar span { display: block; height: 100%; background: var(--ochre); border-radius: 4px; }
+.ph-row .v { font-size: var(--s-1); font-weight: 600; }
+.ph-row .avg { font-size: var(--s-1); color: var(--ink-2); }
+.ans-legend { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: var(--s-1); color: var(--ink-2); }
+.ans-legend span { display: inline-flex; align-items: center; gap: 6px; }
+.ans-legend i { width: 12px; height: 12px; border-radius: 3px; display: inline-block; }
+.ans-part { display: grid; gap: 22px; }
+.ans-part h3 { font-size: var(--s-1); font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-2); border-top: 1px solid var(--rule); padding-top: 14px; }
+.ans-part h3 b { color: var(--ochre-ink); margin-right: 6px; }
+.ans-q { display: grid; gap: 8px; }
+.ans-q .qt { font-family: var(--text); font-size: 1.125rem; line-height: 1.4; font-weight: 500; }
+.ans-q .ends { display: flex; justify-content: space-between; gap: 16px; font-size: var(--s-1); }
+.ans-q .ends .l { color: var(--prussian); }
+.ans-q .ends .r { color: var(--ochre-ink); text-align: right; }
+.stack { display: flex; height: 26px; border-radius: 6px; overflow: hidden; background: var(--rule); }
+.stack span { display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 600; font-variant-numeric: tabular-nums; min-width: 0; overflow: hidden; white-space: nowrap; }
+.stack .s-2 { background: var(--a-2); color: #FFFFFF; }
+.stack .s-1 { background: var(--a-1); color: var(--ink); }
+.stack .s0 { background: var(--a0); color: var(--ink); }
+.stack .s1 { background: var(--a1); color: var(--ink); }
+.stack .s2 { background: var(--a2); color: #FFFFFF; }
+.stack .you { box-shadow: inset 0 0 0 2px var(--ink); }
+.ans-q .yours { font-size: var(--s-1); color: var(--ink-2); }
+@media (max-width: 640px) {
+  .ph-head, .ph-row { grid-template-columns: 1.5rem minmax(0, 1fr) 3rem 3.6rem; }
+  .ph-head .barh, .ph-row .bar { display: none; }
+}
+.credits b { font-weight: 600; color: var(--ink); }
+
+/* Background question */
+.bg-card { gap: 22px; min-height: 0; }
+.bg-opts { display: grid; gap: 10px; max-width: 34rem; }
+.bg-opt { text-align: left; display: grid; gap: 2px; padding: 14px 18px; border: 1.5px solid var(--rule); border-radius: 12px; background: var(--surface); cursor: pointer; transition: border-color .15s; }
+.bg-opt:hover { border-color: var(--ink-2); }
+.bg-opt[aria-checked="true"] { border-color: var(--ochre); box-shadow: inset 0 0 0 1px var(--ochre); }
+.bg-opt b { font-family: var(--text); font-size: var(--s1); font-weight: 600; }
+.bg-opt span { color: var(--ink-2); font-size: var(--s-1); }
+.bg-fine { font-size: var(--s-1); color: var(--ink-2); max-width: 34rem; }
+
+/* Everyone's distribution on the profile chart */
+.track.has-dist { height: 34px; }
+.track .dist { position: absolute; left: 0; top: 0; width: 100%; height: 50%; fill: var(--a-1); opacity: .55; pointer-events: none; }
+.row.with-pctl { grid-template-areas: "name neg track pos" ". . pctl ."; row-gap: 0; }
+.row .pctl { grid-area: pctl; font-size: var(--s-1); color: var(--ink-2); margin-top: -6px; }
+.legend .crowd-sw { width: 18px; height: 9px; border-radius: 9px 9px 0 0; background: var(--a-1); opacity: .7; }
+
+/* Statistics: sections */
+.sect-intro { color: var(--ink-2); max-width: 46em; }
+.stats-note { color: var(--ink-2); max-width: 46em; }
+.fine-note { font-size: var(--s-1); color: var(--ink-2); max-width: 52em; }
+.label.sub { margin-top: 10px; }
+.ycards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+.ycard { background: var(--surface); border: 1px solid var(--rule); border-radius: 14px; padding: 18px 20px; display: grid; gap: 12px; align-content: start; }
+.ycard .yt { font-family: var(--text); font-size: 1.15rem; line-height: 1.4; }
+.ycard .ys { font-size: var(--s-1); color: var(--ink-2); }
+.ptrack { display: grid; gap: 6px; padding-top: 4px; }
+.pbar { position: relative; height: 8px; border-radius: 4px; background: var(--rule); }
+.pfill { position: absolute; left: 0; top: 0; bottom: 0; border-radius: 4px; background: var(--ochre-wash); }
+.pmk { position: absolute; top: 50%; width: 14px; height: 14px; border-radius: 50%; background: var(--ochre); transform: translate(-50%, -50%); box-shadow: 0 0 0 2px var(--surface); }
+.pends { display: flex; justify-content: space-between; gap: 12px; font-size: var(--s-1); color: var(--ink-2); }
+.two-col { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px 48px; align-items: start; }
+.two-col .col { display: grid; gap: 24px; }
+.ans-list { display: grid; gap: 28px; }
+.links { list-style: none; margin: 0; padding: 0; display: grid; border-top: 1px solid var(--rule); }
+.links li { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 16px; align-items: baseline; padding: 12px 0; border-bottom: 1px solid var(--rule); }
+.links p { font-family: var(--text); font-size: 1.075rem; line-height: 1.45; }
+.links b { font-weight: 700; }
+.links .dimn { color: var(--ink-2); font-family: var(--body); font-size: var(--s-1); }
+.rchip { font-variant-numeric: tabular-nums; font-size: var(--s-1); font-weight: 600; color: var(--ochre-ink); background: var(--ochre-wash); border-radius: 999px; padding: 2px 10px; white-space: nowrap; }
+.coh-list { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--rule); }
+.coh-row { display: grid; grid-template-columns: 9rem minmax(0, 1fr) 3.4rem 6rem; grid-template-areas: "an bar cv verd"; gap: 6px 14px; align-items: center; padding: 9px 0; border-bottom: 1px solid var(--rule); }
+.coh-row .an { grid-area: an; font-size: var(--s-1); font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-2); }
+.coh-row .cbar { grid-area: bar; position: relative; height: 10px; background: var(--rule); border-radius: 5px; }
+.coh-row .cfill { position: absolute; left: 0; top: 0; bottom: 0; background: var(--prussian); border-radius: 5px; }
+.coh-row .cfill.weak { background: var(--a-1); }
+.coh-row .cout { position: absolute; top: -5px; bottom: -5px; width: 3px; margin-left: -1.5px; background: var(--ochre); border-radius: 2px; }
+.coh-row .cguide { position: absolute; top: -7px; bottom: -7px; border-left: 1px dashed var(--ink-2); opacity: .7; }
+.coh-row .cv { grid-area: cv; font-variant-numeric: tabular-nums; font-weight: 600; text-align: right; font-size: var(--s-1); }
+.coh-row .cverd { grid-area: verd; font-size: var(--s-1); color: var(--ink-2); }
+.legend { flex-wrap: wrap; }
+.legend .sw-in { width: 18px; height: 8px; border-radius: 4px; background: var(--prussian); }
+.legend .sw-out { width: 3px; height: 14px; border-radius: 2px; background: var(--ochre); }
+.legend .sw-guide { width: 0; height: 14px; border-left: 1px dashed var(--ink-2); }
+
+@media (max-width: 860px) {
+  .ycards, .two-col { grid-template-columns: minmax(0, 1fr); }
+  .result-body { grid-template-columns: minmax(0, 1fr); }
+  .runners { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .ranking { grid-template-columns: minmax(0, 1fr); }
+  .dim-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 640px) {
+  .era { grid-template-columns: minmax(0, 1fr); }
+  .row { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); grid-template-areas: "name name" "neg pos" "track track"; gap: 2px 12px; }
+  .row .neg { text-align: left; }
+  .row .pos { text-align: right; }
+  .row.with-pctl { grid-template-areas: "name name" "neg pos" "track track" "pctl pctl"; }
+  .row .pctl { margin-top: 0; }
+  .coh-row { grid-template-columns: minmax(0, 1fr) 3rem 5.6rem; grid-template-areas: "an an an" "bar cv verd"; }
+  .pair { gap: 16px; }
+  .quiz-nav .hint { display: none; }
+  .qcard { min-height: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+</style>
+</head>
+<body>
+<div class="wrap" id="app">
+
+  <!-- INTRO -->
+  <section id="intro" class="wrap-inner" style="display:grid;gap:44px">
+    <div class="intro-head">
+      <p class="label">A personality and worldview test</p>
+      <h1 class="display">Which philosopher are <em>you?</em></h1>
+      <p class="lede">Fifty-four questions about how you think, what you believe, and how you live. Your answers are scored on sixteen dimensions and matched against forty-four philosophers, from Confucius to David Chalmers.</p>
+      <div class="cta-row">
+        <button class="btn primary" id="startBtn" type="button">Begin the test</button>
+        <button class="btn quiet" id="altBtn" type="button" hidden>Start over</button>
+        <span class="meta" id="introMeta">About 8 minutes. Your answers stay in this browser.</span>
+      </div>
+    </div>
+
+    <section class="dims" aria-labelledby="dimsH">
+      <h2 class="label" id="dimsH">The sixteen dimensions</h2>
+      <ul class="dim-grid" id="dimGrid"></ul>
+    </section>
+
+    <section class="roster" aria-labelledby="rosterH">
+      <h2 class="label" id="rosterH">The forty-four philosophers</h2>
+      <div id="rosterList" style="display:grid;gap:14px"></div>
+    </section>
+  </section>
+
+  <!-- QUIZ -->
+  <section id="quiz" hidden style="display:grid;gap:8px">
+    <div class="masthead"><button class="wordmark" type="button" data-home>Which Philosopher Are You?</button><span class="label" id="quizPart"></span></div>
+    <div class="progress" style="padding-top:18px">
+      <div class="progress-top">
+        <div class="part-label" id="partLabel"></div>
+        <div class="count"><b id="qNum">1</b> / <span id="qTotal">54</span></div>
+      </div>
+      <div class="segs" id="segs"></div>
+    </div>
+    <div class="qcard" id="qcard">
+      <div id="qBody"></div>
+      <div class="scale-wrap">
+        <div class="scale" role="radiogroup" id="scale" aria-labelledby="qText">
+          <button class="opt" type="button" role="radio" data-v="-2" aria-checked="false"></button>
+          <button class="opt" type="button" role="radio" data-v="-1" aria-checked="false"></button>
+          <button class="opt" type="button" role="radio" data-v="0" aria-checked="false"></button>
+          <button class="opt" type="button" role="radio" data-v="1" aria-checked="false"></button>
+          <button class="opt" type="button" role="radio" data-v="2" aria-checked="false"></button>
+        </div>
+        <div class="scale-labels" id="scaleLabels"><span class="sl">Disagree</span><span class="sm">Neutral</span><span class="sr">Agree</span></div>
+      </div>
+    </div>
+    <div class="quiz-nav">
+      <div class="navs">
+        <button class="linkbtn" type="button" id="backBtn">← Back</button>
+        <button class="linkbtn" type="button" id="nextBtn">Next →</button>
+      </div>
+      <span class="hint">Keys 1–5 answer, ← and → move</span>
+    </div>
+  </section>
+
+  <!-- BACKGROUND (online version only) -->
+  <section id="bgq" hidden style="display:grid;gap:8px">
+    <div class="masthead"><button class="wordmark" type="button" data-home>Which Philosopher Are You?</button><span class="label">Last step</span></div>
+    <div class="qcard bg-card">
+      <p class="label" style="color:var(--ochre-ink)">One last, optional question</p>
+      <p class="prompt" id="bgText" style="min-height:0">How much philosophy have you studied?</p>
+      <div class="bg-opts" role="radiogroup" aria-labelledby="bgText" id="bgOpts">
+        <button class="bg-opt" type="button" role="radio" data-bg="1" aria-checked="false"><b>None</b><span>Philosophy isn’t something I’ve studied.</span></button>
+        <button class="bg-opt" type="button" role="radio" data-bg="2" aria-checked="false"><b>Some</b><span>A course or two, or serious reading on my own.</span></button>
+        <button class="bg-opt" type="button" role="radio" data-bg="3" aria-checked="false"><b>A lot</b><span>I study or studied philosophy at university.</span></button>
+        <button class="bg-opt" type="button" role="radio" data-bg="4" aria-checked="false"><b>It’s my profession</b><span>PhD student, PhD, or an academic job in philosophy.</span></button>
+      </div>
+      <p class="bg-fine">It is stored anonymously together with your answers.</p>
+    </div>
+    <div class="quiz-nav">
+      <div class="navs">
+        <button class="linkbtn" type="button" id="bgBack">← Back</button>
+        <button class="linkbtn" type="button" id="bgSkip">Skip →</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESULTS -->
+  <section id="results" hidden style="display:grid;gap:56px">
+    <div class="masthead"><button class="wordmark" type="button" data-home>Which Philosopher Are You?</button><span class="label">Your result</span></div>
+
+    <div style="display:grid;gap:32px">
+      <div class="result-hero">
+        <p class="eyebrow"><span class="label">Your closest match</span><span class="pct-badge" id="rPct"></span></p>
+        <h1 class="display result-name" id="rName"></h1>
+        <p class="result-sub"><span class="ep" id="rEpithet"></span> <span id="rMeta"></span></p>
+      </div>
+      <div class="result-body">
+        <div class="result-main">
+          <figure class="quote"><p id="rQuote"></p><cite id="rCite"></cite></figure>
+          <p class="blurb" id="rBlurb"></p>
+          <p class="read"><b>Start with</b><span id="rRead"></span></p>
+          <p class="note" id="rNote" hidden></p>
+        </div>
+        <aside class="why">
+          <div class="agree"><h3 class="label" id="agreeH">Where you agree</h3><ul id="agreeList"></ul></div>
+          <div class="argue"><h3 class="label" id="argueH">Where you’d argue</h3><ul id="argueList"></ul></div>
+        </aside>
+      </div>
+    </div>
+
+    <section class="sect" aria-labelledby="runH">
+      <div class="sect-head"><h2 id="runH">Also close</h2><span class="label">Select anyone to compare</span></div>
+      <div class="runners" id="runners"></div>
+      <p class="opposite" id="opposite"></p>
+    </section>
+
+    <section class="sect" id="compareSect" aria-labelledby="cmpH">
+      <div class="sect-head"><h2 id="cmpH">Your profile</h2><div class="legend"><span><i class="you"></i>You</span><span><i class="them"></i><b id="legendName" style="font-weight:500"></b></span><span id="legendCrowd" hidden><i class="crowd-sw"></i>Everyone</span></div></div>
+      <div class="cmp-card" id="cmpCard"></div>
+      <div class="chart" id="chart"></div>
+    </section>
+
+    <section class="sect" aria-labelledby="allH">
+      <div class="sect-head"><h2 id="allH">All forty-four, ranked</h2><span class="label">Match with your answers</span></div>
+      <ol class="ranking" id="ranking"></ol>
+    </section>
+
+    <section class="crowd" id="crowd" hidden aria-labelledby="crowdH">
+      <h2 class="label" id="crowdH">Everyone else</h2>
+      <p>See how other people answered each question, which philosophers they matched most often, how unusual your answers are, and which views tend to go together.</p>
+      <div class="actions"><button class="btn primary" type="button" id="statsBtn">See everyone’s results</button></div>
+      <p class="fine">Your answers and result have been added anonymously to these statistics.</p>
+    </section>
+
+    <div class="sect">
+      <div class="actions">
+        <button class="btn primary" type="button" id="copyBtn">Copy my result</button>
+        <button class="btn quiet" type="button" id="retakeBtn">Retake the test</button>
+        <span class="status" id="status" role="status"></span>
+      </div>
+      <textarea class="copy-out" id="copyOut" readonly hidden aria-label="Result text to copy"></textarea>
+      <p class="method">How the match works: every answer moves you along one or two of the sixteen dimensions. Each philosopher has a profile on the same dimensions, and your match is the similarity (cosine) between your profile and theirs, shown on a 0–100 scale.</p>
+    </div>
+  </section>
+
+  <!-- STATISTICS -->
+  <section id="stats" hidden style="display:grid;gap:48px">
+    <div class="masthead"><button class="wordmark" type="button" data-home>Which Philosopher Are You?</button><button class="linkbtn" type="button" id="statsBack">← Your result</button></div>
+    <div class="stats-head">
+      <p class="label">Everyone’s results</p>
+      <h1 class="display">How everyone else answered</h1>
+      <p class="stats-msg" id="statsMeta">Loading the statistics…</p>
+    </div>
+    <div id="statsBody" style="display:grid;gap:56px"></div>
+  </section>
+
+  <footer class="credits" id="credits">
+    <p>Please note: the philosopher profiles are deliberate simplifications of thinkers who were rarely simple, and they may contain errors. Treat your result as a conversation starter, not a verdict.</p>
+    <p style="margin-top:8px">Created by <b>Kayla Carnation</b> and <b>Leonard Dung</b>, with Claude.</p>
+  </footer>
+</div>
+
+<script>
+// The quiz page was written for Google Apps Script, where it calls the server through
+// google.script.run. On this site the same calls go over HTTP to the "Website API" deployment
+// of that script, so responses and statistics are shared with the original link.
+(function () {
+  const API = "https://script.google.com/macros/s/AKfycbzeV52JXtHK81UM-mXPzZEF2UBnYIKN3gEMaMlrUP8_k4l31IdvFmBq8C2MnymZsduh/exec";
+  function call(fn, payload, ok, fail) {
+    const req = fn === "record"
+      ? fetch(API, { method: "POST", headers: { "Content-Type": "text/plain;charset=utf-8" }, body: JSON.stringify(payload) })
+      : fetch(API + "?api=stats");
+    req.then(r => r.json())
+      .then(d => { if (d && d.ok === false) throw new Error(d.error || "Request failed"); if (ok) ok(fn === "record" ? true : d); })
+      .catch(e => { if (fail) fail(e); });
+  }
+  function runner(ok, fail) {
+    return {
+      withSuccessHandler: f => runner(f, fail),
+      withFailureHandler: f => runner(ok, f),
+      record: payload => call("record", payload, ok, fail),
+      getStats: () => call("getStats", null, ok, fail)
+    };
+  }
+  window.google = { script: { run: runner(null, null) } };
+})();
+</script>
+<script>
+const AXES = [
+  { id: "reason",    name: "Knowledge",     neg: "Experience",    pos: "Reason",
+    negText: "knowledge has to start from experience", posText: "reason can know some things without experience" },
+  { id: "system",    name: "Structure",     neg: "Fragments",     pos: "System",
+    negText: "life resists grand systems", posText: "ideas should fit into one coherent system" },
+  { id: "science",   name: "Science",       neg: "Beyond science", pos: "Science first",
+    negText: "the deepest truths lie beyond science", posText: "science is the best guide to reality" },
+  { id: "mind",      name: "Consciousness", neg: "Mechanism",     pos: "Irreducible",
+    negText: "the mind is what the brain does", posText: "consciousness can't be reduced to physical processes" },
+  { id: "faith",     name: "The sacred",    neg: "Secular",       pos: "Sacred",
+    negText: "the world needs no sacred foundation", posText: "something sacred stands behind the world" },
+  { id: "doubt",     name: "Certainty",     neg: "Confidence",    pos: "Doubt",
+    negText: "careful thought can reach real certainty", posText: "doubt is the honest default" },
+  { id: "hope",      name: "Outlook",       neg: "Tragic",        pos: "Hopeful",
+    negText: "suffering and conflict run deep in human life", posText: "humanity can and does get better" },
+  { id: "outcomes",  name: "Ethics",        neg: "Principles",    pos: "Consequences",
+    negText: "some principles hold whatever the consequences", posText: "what matters is how things turn out" },
+  { id: "objective", name: "Values",        neg: "Made",          pos: "Found",
+    negText: "values are made, not found", posText: "some things are good or bad regardless of opinion" },
+  { id: "community", name: "Self",          neg: "Individual",    pos: "Community",
+    negText: "the individual comes first", posText: "we are made by our communities" },
+  { id: "change",    name: "Society",       neg: "Order",         pos: "Change",
+    negText: "order and tradition deserve respect", posText: "society needs deep change" },
+  { id: "passion",   name: "Emotion",       neg: "Discipline",    pos: "Passion",
+    negText: "reason should govern the emotions", posText: "feeling, not reason, drives us" },
+  { id: "freedom",   name: "Will",          neg: "Determined",    pos: "Free",
+    negText: "our choices are shaped by causes beyond us", posText: "we are radically free to choose" },
+  { id: "action",    name: "Life",          neg: "Contemplation", pos: "Engagement",
+    negText: "the good life is a quiet, reflective one", posText: "thinking should lead to action in the world" },
+  { id: "style",     name: "Expression",    neg: "Evocative",     pos: "Exact",
+    negText: "some truths are best shown, not argued", posText: "clear, rigorous argument is the way to truth" },
+  { id: "deflate",   name: "Big questions", neg: "Mystery",       pos: "Deflation",
+    negText: "the big questions are real and deep", posText: "many big questions dissolve on closer look" }
+];
+
+const PARTS = [
+  { n: "I",   title: "Knowledge & Truth" },
+  { n: "II",  title: "Mind, Nature & God" },
+  { n: "III", title: "Right & Wrong" },
+  { n: "IV",  title: "Living Together" },
+  { n: "V",   title: "How You Think" },
+  { n: "VI",  title: "How You Live" }
+];
+
+// type "agree": 5-point disagree→agree. type "pair": 5-point left→right.
+// load: { axis: weight } — agreeing (or leaning right) moves you toward the sign of the weight.
+const QUESTIONS = [
+  // I. Knowledge & Truth
+  { p: 0, t: "agree", q: "Some truths can be known by pure thinking, without any observation at all.", load: { reason: 1 } },
+  { p: 0, t: "agree", q: "Most of what I believe could turn out to be wrong.", load: { doubt: 1 } },
+  { p: 0, t: "agree", q: "Many big philosophical problems are really confusions about words.", load: { deflate: 1 } },
+  { p: 0, t: "agree", q: "If a claim can't be checked against experience, we can't really know it.", load: { reason: -1 } },
+  { p: 0, t: "agree", q: "With careful enough reasoning, we can reach certainty about the fundamental questions.", load: { doubt: -1 } },
+  { p: 0, t: "agree", q: "“Why is there something rather than nothing?” is a real question that deserves an answer.", load: { deflate: -1 } },
+  { p: 0, t: "pair",  q: "When I want to understand something, I’d rather…", l: "see lots of real examples", r: "work out the underlying principle in my head", load: { reason: 1 } },
+  { p: 0, t: "agree", q: "I’m more comfortable asking questions than giving answers.", load: { doubt: 1 } },
+  { p: 0, t: "agree", q: "When a debate drags on for centuries, the question itself is probably badly posed.", load: { deflate: 1 } },
+  { p: 0, t: "agree", q: "If something can’t be said clearly, it probably isn’t worth believing.", load: { style: 1, deflate: 0.5 } },
+
+  // II. Mind, Nature & God
+  { p: 1, t: "agree", q: "In the end, the natural sciences are our best guide to what exists.", load: { science: 1 } },
+  { p: 1, t: "agree", q: "Even a complete physical description of your brain would leave out what it’s like to be you.", load: { mind: 1 } },
+  { p: 1, t: "agree", q: "Something like God, or a sacred order, stands behind the world.", load: { faith: 1 } },
+  { p: 1, t: "agree", q: "Every choice I make was settled by prior causes, like everything else in nature.", load: { freedom: -1 } },
+  { p: 1, t: "agree", q: "The most important truths about human life can’t be discovered in a laboratory.", load: { science: -1 } },
+  { p: 1, t: "agree", q: "The mind is simply what the brain does.", load: { mind: -1 } },
+  { p: 1, t: "agree", q: "Morality and meaning need no religious foundation.", load: { faith: -1 } },
+  { p: 1, t: "agree", q: "There is a real “me” that stays the same through all the changes in my body and thoughts.", load: { mind: 0.5 } },
+  { p: 1, t: "pair",  q: "When I think about death, I find more comfort in…", l: "knowing it is simply the end", r: "hoping for something beyond it", load: { faith: 1 } },
+  { p: 1, t: "agree", q: "If neuroscience and a philosopher’s argument disagree, I’d bet on the neuroscience.", load: { science: 1 } },
+
+  // III. Right & Wrong
+  { p: 2, t: "agree", q: "An action is right if it leads to the best overall results.", load: { outcomes: 1 } },
+  { p: 2, t: "agree", q: "Torturing for fun would be wrong even if everyone on Earth approved of it.", load: { objective: 1 } },
+  { p: 2, t: "agree", q: "Whatever happens to me, I am always free to choose how I respond.", load: { freedom: 1 } },
+  { p: 2, t: "agree", q: "Reason alone can never move us to act; feelings do the real work.", load: { passion: 1 } },
+  { p: 2, t: "agree", q: "Some things must never be done, even to prevent a greater disaster.", load: { outcomes: -1 } },
+  { p: 2, t: "agree", q: "Values are something we create, not something we discover.", load: { objective: -1 } },
+  { p: 2, t: "pair",  q: "Lying to spare someone’s feelings is…", l: "still a lie, and wrong", r: "fine if it makes things better", load: { outcomes: 1 } },
+  { p: 2, t: "agree", q: "A wise person keeps their emotions firmly under the control of reason.", load: { passion: -1 } },
+  { p: 2, t: "agree", q: "There is no fixed human nature; we are wholly responsible for what we make of ourselves.", load: { freedom: 1 } },
+  { p: 2, t: "agree", q: "What counts as good mostly depends on your culture and upbringing.", load: { objective: -1 } },
+
+  // IV. Living Together
+  { p: 3, t: "agree", q: "We become who we are through our families, traditions, and communities.", load: { community: 1 } },
+  { p: 3, t: "agree", q: "Society’s basic institutions need radical transformation, not just reform.", load: { change: 1 } },
+  { p: 3, t: "agree", q: "Thinkers have a duty to take part in public and political life.", load: { action: 1 } },
+  { p: 3, t: "agree", q: "Humanity is, on the whole, getting better over time.", load: { hope: 1 } },
+  { p: 3, t: "agree", q: "Your first duty is to be true to yourself, even if it sets you against everyone around you.", load: { community: -1 } },
+  { p: 3, t: "agree", q: "Long-standing customs usually contain wisdom we don’t fully understand.", load: { change: -1 } },
+  { p: 3, t: "agree", q: "The best life is a quiet one, far from crowds and politics.", load: { action: -1 } },
+  { p: 3, t: "agree", q: "Left to themselves, people tend toward selfishness and conflict.", load: { hope: -1 } },
+  { p: 3, t: "agree", q: "Peace and stability are worth more than any cause that would take chaos to achieve.", load: { change: -1 } },
+
+  // V. How You Think
+  { p: 4, t: "agree", q: "A good worldview should fit together into one coherent system, every part supporting the others.", load: { system: 1 } },
+  { p: 4, t: "pair",  q: "Which do you find more convincing?", l: "a vivid story or image that shows the point", r: "a step-by-step argument with clear premises", load: { style: 1 } },
+  { p: 4, t: "agree", q: "Life is too messy to be captured by any grand theory.", load: { system: -1 } },
+  { p: 4, t: "pair",  q: "When making a big life decision, I go with…", l: "careful reasoning", r: "my gut", load: { passion: 1 } },
+  { p: 4, t: "agree", q: "Some of the deepest truths can only be expressed in poetry, myth, or paradox.", load: { style: -1, deflate: -0.5 } },
+  { p: 4, t: "pair",  q: "When I take on a big project, I prefer to…", l: "explore and see where it leads", r: "design the whole structure first", load: { system: 1 } },
+  { p: 4, t: "pair",  q: "Given a free afternoon and a book, I’d pick…", l: "a novel, poetry, or a personal essay", r: "popular science or something technical", load: { style: 0.5, science: 0.5 } },
+
+  // VI. How You Live
+  { p: 5, t: "agree", q: "Suffering is built into the very structure of existence.", load: { hope: -1 } },
+  { p: 5, t: "pair",  q: "On a free weekend I’d rather…", l: "wander alone with my thoughts", r: "spend it with friends or family", load: { community: 1 } },
+  { p: 5, t: "pair",  q: "I’d rather be remembered for…", l: "one deep idea", r: "one thing I did that changed people’s lives", load: { action: 1 } },
+  { p: 5, t: "agree", q: "People who know me would call me an optimist.", load: { hope: 1 } },
+  { p: 5, t: "pair",  q: "I’d rather live…", l: "a long, calm life", r: "a shorter but more intense one", load: { passion: 1 } },
+  { p: 5, t: "pair",  q: "Rules and conventions feel to me more like…", l: "guardrails I’m glad to have", r: "obstacles worth questioning", load: { change: 1 } },
+  { p: 5, t: "pair",  q: "When a friend is grieving, the most helpful thing is to…", l: "help them see things from a calmer perspective", r: "feel it with them", load: { passion: 1 } },
+  { p: 5, t: "agree", q: "I often feel that ordinary life is missing something essential.", load: { faith: 0.5, hope: -0.5 } }
+];
+
+// Profiles on 16 axes, each −2…+2, in AXES order:
+// reason, system, science, mind, faith, doubt, hope, outcomes, objective, community, change, passion, freedom, action, style, deflate
+const PHILOSOPHERS = [
+  { id: "socrates", name: "Socrates", short: "Socrates", dates: "c. 470–399 BCE", era: 0, epithet: "The Gadfly", school: "Classical Athens",
+    v: [1, -1.5, -1, 1, 1, 1.5, 1, -1, 2, 0.5, 0.5, -1.5, 0, 1.5, 0, -0.5],
+    quote: "The unexamined life is not worth living for a human being.", cite: "Plato, Apology 38a",
+    blurb: "Socrates wrote nothing and claimed to know nothing, yet he changed philosophy by asking people what they meant and refusing to let them off the hook. You value the question over the answer, care more about living well than about theories of the cosmos, and would rather be argued out of a mistake than flattered into keeping it.",
+    read: "Plato, Apology" },
+  { id: "plato", name: "Plato", short: "Plato", dates: "c. 428–348 BCE", era: 0, epithet: "The Idealist", school: "Platonism",
+    v: [2, 2, -1, 2, 1, -1.5, 0.5, -1, 2, 1.5, 0, -2, 0, 0, -0.5, -2],
+    quote: "Philosophy begins in wonder.", cite: "Theaetetus 155d",
+    blurb: "Plato thought the world of the senses is a shadow of a more real order of perfect Forms, knowable only by reason. You suspect that beneath appearances lies a deeper and better reality, you think goodness and justice are objective, and you trust disciplined thought over passing feelings.",
+    read: "Republic, Books VI–VII" },
+  { id: "aristotle", name: "Aristotle", short: "Aristotle", dates: "384–322 BCE", era: 0, epithet: "The Observer", school: "Peripatetic school",
+    v: [-1, 2, 1, 0.5, 0.5, -1.5, 1, -0.5, 1.5, 2, -1.5, 0, 0.5, -0.5, 1.5, 0],
+    quote: "Man is by nature a political animal.", cite: "Politics I.2, 1253a",
+    blurb: "Aristotle studied everything from squid to constitutions and built a system grounded in careful observation. You trust common sense refined by experience, think a good life means developing good character among other people, and prefer the sensible middle to the extremes.",
+    read: "Nicomachean Ethics, Books I–II" },
+  { id: "diogenes", name: "Diogenes of Sinope", short: "Diogenes", dates: "c. 412–323 BCE", era: 0, epithet: "The Cynic", school: "Cynicism",
+    v: [-1, -2, -1, 0, -1.5, 0.5, 0, 0, 0.5, -2, 2, -1, 1.5, 1, -1, 1],
+    quote: "Stand out of my light.", cite: "to Alexander the Great, in Diogenes Laertius, Lives VI.38",
+    blurb: "Diogenes lived in a storage jar, begged for his food, and mocked every convention of Athenian life to show how little a person really needs. You distrust pomp and theory, value self-sufficiency, and are willing to look ridiculous to make a point.",
+    read: "Diogenes Laertius, Lives of the Eminent Philosophers, Book VI" },
+  { id: "epicurus", name: "Epicurus", short: "Epicurus", dates: "341–270 BCE", era: 0, epithet: "The Gardener", school: "Epicureanism",
+    v: [-2, 1, 2, -2, -1.5, -1, 1.5, 1.5, 0, 0.5, -0.5, -0.5, 1, -2, 0, 1.5],
+    quote: "Death is nothing to us.", cite: "Letter to Menoeceus 124",
+    blurb: "Epicurus taught that pleasure is the goal of life, but by pleasure he meant a calm mind and a body free from pain: bread, water, friends, and good conversation in his Garden. You are a materialist with a gentle streak who sees no reason to fear death or the gods, and you prefer a quiet life among friends to fame and politics.",
+    read: "Letter to Menoeceus" },
+  { id: "epictetus", name: "Epictetus", short: "Epictetus", dates: "c. 50–135 CE", era: 0, epithet: "The Stoic", school: "Stoicism",
+    v: [0.5, 0, 0, 0, 1.5, -1, 1.5, -1.5, 2, 0.5, -1.5, -2, 0.5, -0.5, -0.5, 0.5],
+    quote: "It is not things that disturb us, but our judgements about things.", cite: "Enchiridion 5",
+    blurb: "Born a slave, Epictetus taught that the only thing truly in our power is how we judge and respond to events. You believe in a rational order to things, keep your emotions on a short leash, and measure a person by their character rather than their circumstances.",
+    read: "Enchiridion (The Handbook)" },
+  { id: "confucius", name: "Confucius", short: "Confucius", dates: "551–479 BCE", era: 0, epithet: "The Teacher", school: "Confucianism",
+    v: [-0.5, -0.5, -1, 0, 0.5, -0.5, 1, -1, 1.5, 2, -2, -1, 0, 2, -1, 0.5],
+    quote: "What you do not want done to yourself, do not do to others.", cite: "Analects 15.24",
+    blurb: "Confucius believed people become good through learning, ritual, and well-ordered relationships between parent and child, ruler and subject, friend and friend. You value tradition, take your roles and responsibilities seriously, and think a decent society is built from the family outward.",
+    read: "The Analects" },
+  { id: "zhuangzi", name: "Zhuangzi", short: "Zhuangzi", dates: "c. 369–286 BCE", era: 0, epithet: "The Butterfly Dreamer", school: "Daoism",
+    v: [-0.5, -2, -1, 0, 0.5, 2, 1, 0, -1.5, -1.5, -0.5, 1, 1.5, -2, -2, 1],
+    quote: "Once Zhuang Zhou dreamt he was a butterfly … He didn’t know if he was Zhuang Zhou who had dreamt he was a butterfly, or a butterfly dreaming he was Zhuang Zhou.", cite: "Zhuangzi, ch. 2",
+    blurb: "Zhuangzi used jokes, parables, and paradoxes to loosen our grip on fixed categories and rigid values. You are playful, suspicious of anyone too sure of themselves, and drawn to going with the flow rather than chasing office or status.",
+    read: "Zhuangzi, the Inner Chapters" },
+  { id: "augustine", name: "Augustine of Hippo", short: "Augustine", dates: "354–430", era: 1, epithet: "The Restless Heart", school: "Christian Platonism",
+    v: [1, 1, -1.5, 2, 2, -1, -1.5, -1.5, 2, 1, -0.5, 1, 0, 0, -1.5, -2],
+    quote: "Our heart is restless until it rests in you.", cite: "Confessions I.1",
+    blurb: "Augustine moved from ambition and pleasure through philosophy to Christian faith, and his Confessions made the inner life a subject for philosophy. You feel that ordinary success leaves something missing, take the darker side of human nature seriously, and believe love and faith reach where argument alone cannot.",
+    read: "Confessions" },
+  { id: "aquinas", name: "Thomas Aquinas", short: "Aquinas", dates: "1225–1274", era: 1, epithet: "The Synthesizer", school: "Scholasticism",
+    v: [0, 2, 0, 1.5, 2, -2, 1, -1.5, 2, 1, -1, -1, 1.5, 0, 2, -1.5],
+    quote: "Grace does not destroy nature but perfects it.", cite: "Summa Theologiae I, q. 1, a. 8, ad 2",
+    blurb: "Aquinas joined Aristotle’s philosophy with Christian theology in one vast, carefully ordered structure. You believe faith and reason are allies, that a natural moral law is knowable by everyone, and that any hard question deserves its best objections stated fairly before you answer it.",
+    read: "Summa Theologiae I, q. 2 (the Five Ways)" },
+  { id: "montaigne", name: "Michel de Montaigne", short: "Montaigne", dates: "1533–1592", era: 1, epithet: "The Essayist", school: "Renaissance skepticism",
+    v: [-1.5, -2, -0.5, 0, 1, 2, 0.5, 0, -1, -1, -1, 0, 0, -1.5, -2, 0.5],
+    quote: "Que sais-je? (What do I know?)", cite: "Essays II.12",
+    blurb: "Montaigne retired to a tower library and invented the essay, testing his mind on everything from cannibals to kidney stones. You are curious, self-observant, skeptical of grand claims, and more interested in honest self-knowledge than in winning arguments.",
+    read: "Essays, “Of Experience” (III.13)" },
+  { id: "descartes", name: "René Descartes", short: "Descartes", dates: "1596–1650", era: 2, epithet: "The Rebuilder", school: "Rationalism",
+    v: [2, 1.5, 1, 2, 1.5, -1, 1, 0, 1, -1.5, -0.5, -1, 2, -1, 1, -1],
+    quote: "I think, therefore I am.", cite: "Discourse on the Method, Part IV",
+    blurb: "Descartes doubted everything he could in order to find something he could not doubt, then rebuilt knowledge from his own thinking mind outward. You trust clear reasoning, like to work things out from first principles, and believe the mind is something other than the body it inhabits.",
+    read: "Meditations on First Philosophy" },
+  { id: "hobbes", name: "Thomas Hobbes", short: "Hobbes", dates: "1588–1679", era: 2, epithet: "The Realist", school: "Materialism · social contract",
+    v: [-0.5, 2, 2, -2, -1, -0.5, -2, 1, -1.5, 0, -2, 1, -2, 0.5, 0.5, 1],
+    quote: "… and the life of man, solitary, poor, nasty, brutish, and short.", cite: "Leviathan, ch. 13",
+    blurb: "Hobbes saw human beings as matter in motion, driven by appetite and fear, and argued that only a strong sovereign stands between us and a war of all against all. You are an unsentimental materialist who doesn’t think people are naturally good, and you value peace and order above almost everything.",
+    read: "Leviathan, chs. 13–15" },
+  { id: "spinoza", name: "Baruch Spinoza", short: "Spinoza", dates: "1632–1677", era: 2, epithet: "The Lens Grinder", school: "Rationalism",
+    v: [2, 2, 2, 0, 0.5, -2, 1, 0.5, -0.5, -0.5, 1, -1.5, -2, -1.5, 2, 0],
+    quote: "All things excellent are as difficult as they are rare.", cite: "Ethics V, P42, Scholium",
+    blurb: "Spinoza set out his Ethics in the manner of geometry and identified God with Nature itself. You see everything as part of one necessary order, find freedom in understanding rather than in choice, and aim for the calm joy that comes from seeing things as they are.",
+    read: "Ethics, Part I and its Appendix" },
+  { id: "pascal", name: "Blaise Pascal", short: "Pascal", dates: "1623–1662", era: 2, epithet: "The Wagerer", school: "Jansenism",
+    v: [-1, -2, 0, 1.5, 2, 1.5, -1.5, 0.5, 1, -0.5, -1, 1.5, 0, -1, -1.5, -1.5],
+    quote: "The heart has its reasons of which reason knows nothing.", cite: "Pensées, L423",
+    blurb: "Pascal was a mathematical prodigy who concluded that reason alone cannot save us, and left behind the unfinished fragments of the Pensées. You are torn between rigour and longing, feel how fragile human life is, and suspect the heart sees things the intellect cannot.",
+    read: "Pensées" },
+  { id: "locke", name: "John Locke", short: "Locke", dates: "1632–1704", era: 2, epithet: "The Liberal", school: "Empiricism · liberalism",
+    v: [-2, 1, 1, 0, 1, 0.5, 1, 0, 1, -1.5, 0.5, -0.5, 0, 1, 0.5, 0.5],
+    quote: "The candle that is set up in us shines bright enough for all our purposes.", cite: "An Essay Concerning Human Understanding I.i.5",
+    blurb: "Locke argued that all our ideas come from experience and that governments exist to protect natural rights to life, liberty, and property. You are practical and reasonable, wary of overreach, and convinced that people have rights no ruler may take away.",
+    read: "Second Treatise of Government" },
+  { id: "leibniz", name: "Gottfried Wilhelm Leibniz", short: "Leibniz", dates: "1646–1716", era: 2, epithet: "The Optimist", school: "Rationalism",
+    v: [2, 2, 0.5, 2, 1.5, -2, 2, 0.5, 2, 0, -1, -1, -0.5, 1, 1, -2],
+    quote: "Why is there something rather than nothing?", cite: "Principles of Nature and Grace §7",
+    blurb: "Leibniz co-invented the calculus, designed calculating machines, and argued that this is the best of all possible worlds, built from mind-like simple substances he called monads. You are an optimist with a systematic mind, convinced that everything has a reason and that the deepest questions have answers.",
+    read: "Monadology" },
+  { id: "hume", name: "David Hume", short: "Hume", dates: "1711–1776", era: 2, epithet: "The Genial Skeptic", school: "Empiricism · skepticism",
+    v: [-2, 0, 2, -1, -2, 2, 1, 1, -1.5, 0.5, -1, 2, -1, 0.5, 0.5, 2],
+    quote: "Reason is, and ought only to be the slave of the passions.", cite: "A Treatise of Human Nature 2.3.3",
+    blurb: "Hume showed how little reason alone can establish about causation or the self, and explained our beliefs through habit and feeling instead. You are an empirically minded skeptic with no patience for metaphysical grandstanding, yet sociable, good-humoured, and guided by sympathy for others.",
+    read: "An Enquiry Concerning Human Understanding" },
+  { id: "rousseau", name: "Jean-Jacques Rousseau", short: "Rousseau", dates: "1712–1778", era: 2, epithet: "The Romantic", school: "Enlightenment · Romanticism",
+    v: [-1, -0.5, -2, 0.5, 1, 0, 0, -0.5, 0.5, 1.5, 2, 2, 2, 0.5, -2, -1],
+    quote: "Man is born free, and everywhere he is in chains.", cite: "The Social Contract I.1",
+    blurb: "Rousseau argued that humans are naturally good but corrupted by society, and imagined a political community governed by the general will. You trust feeling over cleverness, are suspicious of so-called progress, and want a freer, more authentic way of living together.",
+    read: "Discourse on the Origin of Inequality" },
+  { id: "kant", name: "Immanuel Kant", short: "Kant", dates: "1724–1804", era: 2, epithet: "The Lawgiver", school: "Critical philosophy",
+    v: [1.5, 2, 0.5, 0.5, 0.5, -0.5, 1, -2, 2, 0, 0, -2, 2, -0.5, 1, 0],
+    quote: "Two things fill the mind with ever new and increasing admiration and awe, the more often and steadily we reflect upon them: the starry heavens above me and the moral law within me.", cite: "Critique of Practical Reason, AA 5:161",
+    blurb: "Kant asked what reason can and cannot know, and answered that the mind itself shapes experience. In ethics he held that we may act only on principles we could will as universal laws. You are principled and systematic, and convinced that human dignity is not up for negotiation, whatever the consequences.",
+    read: "Groundwork of the Metaphysics of Morals" },
+  { id: "wollstonecraft", name: "Mary Wollstonecraft", short: "Wollstonecraft", dates: "1759–1797", era: 2, epithet: "The Vindicator", school: "Enlightenment feminism",
+    v: [1.5, 0, 0, 0.5, 1, -1, 1.5, -0.5, 1.5, 0.5, 2, -1.5, 1, 1.5, -0.5, 0],
+    quote: "I do not wish them to have power over men; but over themselves.", cite: "A Vindication of the Rights of Woman, ch. 4",
+    blurb: "Wollstonecraft argued that women seem inferior only because they are denied education, and that virtue is the same for both sexes. You combine moral conviction with a demand for reform, and you think human dignity rests on everyone’s capacity to reason for themselves.",
+    read: "A Vindication of the Rights of Woman" },
+  { id: "hegel", name: "G. W. F. Hegel", short: "Hegel", dates: "1770–1831", era: 3, epithet: "The Dialectician", school: "German Idealism",
+    v: [2, 2, -1, 1.5, 0.5, -2, 1.5, 0, 1, 2, 0, 0.5, 1, 0, -1, -2],
+    quote: "The owl of Minerva spreads its wings only with the falling of the dusk.", cite: "Philosophy of Right, Preface",
+    blurb: "Hegel saw history as Spirit coming to know itself, with every position driven by its own contradictions toward a richer whole. You think big, see individuals as shaped by their society and era, and believe that history, however painfully, moves toward freedom.",
+    read: "Introduction to the Lectures on the Philosophy of History" },
+  { id: "schopenhauer", name: "Arthur Schopenhauer", short: "Schopenhauer", dates: "1788–1860", era: 3, epithet: "The Pessimist", school: "Pessimism",
+    v: [-1, 1.5, 0, 1, -1, -0.5, -2, 0, 0, -1.5, -1, 0, -2, -2, -1, -1],
+    quote: "Life swings like a pendulum to and fro between pain and boredom.", cite: "The World as Will and Representation I, §57",
+    blurb: "Schopenhauer held that reality at bottom is a blind, insatiable will, which leaves life swinging between pain and boredom. You see through comforting stories, find solace in art, compassion, and solitude, and won’t pretend the world is better than it is.",
+    read: "“On the Suffering of the World” (Parerga and Paralipomena)" },
+  { id: "kierkegaard", name: "Søren Kierkegaard", short: "Kierkegaard", dates: "1813–1855", era: 3, epithet: "The Knight of Faith", school: "Christian existentialism",
+    v: [-1.5, -2, -2, 1, 2, 0.5, -1, -1, 0, -2, 0, 2, 2, -1, -2, -2],
+    quote: "Life can only be understood backwards; but it must be lived forwards.", cite: "Journals, 1843",
+    blurb: "Kierkegaard attacked Hegel’s system and the comfortable Christianity of Copenhagen in the name of the anxious, passionate choice of the single individual. You distrust the crowd, think the most important truths must be lived rather than proved, and know that real commitment takes a leap.",
+    read: "Fear and Trembling" },
+  { id: "mill", name: "John Stuart Mill", short: "Mill", dates: "1806–1873", era: 3, epithet: "The Reformer", school: "Utilitarianism · liberalism",
+    v: [-2, 1, 1.5, -0.5, -1.5, 0.5, 1.5, 2, 0.5, -1.5, 1.5, 0, -1, 2, 1, 0.5],
+    quote: "It is better to be a human being dissatisfied than a pig satisfied; better to be Socrates dissatisfied than a fool satisfied.", cite: "Utilitarianism, ch. 2",
+    blurb: "Mill defended utilitarianism, free speech, and the equality of women, and sat in Parliament to put his views into practice. You judge actions by their effects on human happiness, defend everyone’s right to live their own way, and believe in progress through reform and open debate.",
+    read: "On Liberty" },
+  { id: "marx", name: "Karl Marx", short: "Marx", dates: "1818–1883", era: 3, epithet: "The Revolutionary", school: "Historical materialism",
+    v: [-1, 2, 1.5, -1.5, -2, -1.5, 1, 0.5, -1, 2, 2, 0, -1, 2, -0.5, 0.5],
+    quote: "The philosophers have only interpreted the world, in various ways; the point is to change it.", cite: "Theses on Feuerbach, XI",
+    blurb: "Marx read history as a history of class struggle and capitalism as a system that alienates workers from their own labour. You see economic structures behind ideas and institutions, side with the exploited, and want to change the world rather than merely interpret it.",
+    read: "The Communist Manifesto (with Engels)" },
+  { id: "nietzsche", name: "Friedrich Nietzsche", short: "Nietzsche", dates: "1844–1900", era: 3, epithet: "The Hammer", school: "Perspectivism",
+    v: [-1.5, -2, 0, -1, -2, 1, 0, 0, -2, -2, 1, 2, -0.5, -0.5, -2, 1],
+    quote: "God is dead. God remains dead. And we have killed him.", cite: "The Gay Science §125",
+    blurb: "Nietzsche announced the death of God and asked which values could survive it, praising the creative individual who affirms life, suffering included. You distrust herd morality, value strength, style, and honesty about uncomfortable truths, and would rather create your own values than inherit them.",
+    read: "On the Genealogy of Morality" },
+  { id: "james", name: "William James", short: "James", dates: "1842–1910", era: 3, epithet: "The Pragmatist", school: "Pragmatism",
+    v: [-2, -1.5, 0.5, 0.5, 1, 0.5, 1, 1, -0.5, -0.5, 0.5, 1.5, 2, 1, -1, 1.5],
+    quote: "“The true,” to put it very briefly, is only the expedient in the way of our thinking.", cite: "Pragmatism, Lecture VI",
+    blurb: "James, a psychologist as much as a philosopher, judged ideas by the difference they make in experience and defended our right to believe where evidence runs out. You are open-minded and practical, warm toward religious and unusual experience, and confident that effort can make the world better.",
+    read: "Pragmatism" },
+  { id: "russell", name: "Bertrand Russell", short: "Russell", dates: "1872–1970", era: 4, epithet: "The Logician", school: "Analytic philosophy",
+    v: [0.5, 0.5, 2, 0, -2, 0.5, 1, 1.5, -0.5, -0.5, 1.5, 0, -1, 2, 1.5, 1.5],
+    quote: "The good life is one inspired by love and guided by knowledge.", cite: "What I Believe (1925)",
+    blurb: "Russell helped found modern logic and analytic philosophy, then spent decades campaigning against war and nuclear weapons. You are clear-headed, scientific, and irreverent about religion, and you think good thinking should go hand in hand with moral courage.",
+    read: "The Problems of Philosophy" },
+  { id: "wittgenstein", name: "Ludwig Wittgenstein", short: "Wittgenstein", dates: "1889–1951", era: 4, epithet: "The Therapist", school: "Philosophy as therapy",
+    v: [0, -2, -1, -0.5, 0.5, 0, -0.5, 0, 0, 1, -1.5, 0, 0, -1, -0.5, 2],
+    quote: "The aspects of things that are most important for us are hidden because of their simplicity and familiarity. (One is unable to notice something – because it is always before one’s eyes.)", cite: "Philosophical Investigations §129",
+    blurb: "Wittgenstein thought philosophical problems arise when language “goes on holiday”, and came to treat philosophy as therapy rather than theory. You are intense and exacting, impatient with jargon, and more interested in dissolving confused questions than in answering them.",
+    read: "Philosophical Investigations" },
+  { id: "heidegger", name: "Martin Heidegger", short: "Heidegger", dates: "1889–1976", era: 4, epithet: "The Questioner of Being", school: "Phenomenology",
+    v: [-1, 0, -2, 0, 0, -0.5, -1, 0, 0, 0, -1, 1, 0.5, -1.5, -2, -2],
+    quote: "Language is the house of being.", cite: "Letter on Humanism (1946)",
+    blurb: "Heidegger asked what it means for anything to be at all, and described human existence as being-in-the-world, care, and being-toward-death. You distrust technological thinking, feel that modern life has forgotten something essential, and value authenticity over conformity. His membership in the Nazi party remains a lasting stain on his legacy.",
+    read: "“The Question Concerning Technology”" },
+  { id: "sartre", name: "Jean-Paul Sartre", short: "Sartre", dates: "1905–1980", era: 4, epithet: "The Existentialist", school: "Existentialism",
+    v: [-0.5, 0, -1, 1.5, -2, -0.5, -0.5, 0, -2, -0.5, 2, 0.5, 2, 2, -1.5, -1],
+    quote: "Man is condemned to be free.", cite: "Existentialism Is a Humanism",
+    blurb: "Sartre held that there is no human nature given in advance: existence precedes essence, and we are wholly responsible for what we make of ourselves. You prize freedom, despise excuses and bad faith, and believe that intellectuals must take sides.",
+    read: "Existentialism Is a Humanism" },
+  { id: "beauvoir", name: "Simone de Beauvoir", short: "Beauvoir", dates: "1908–1986", era: 4, epithet: "The Liberator", school: "Existentialist feminism",
+    v: [-0.5, 0, -0.5, 0.5, -2, -0.5, 0.5, 0, -1.5, 1, 2, 0.5, 1, 2, -1.5, -0.5],
+    quote: "One is not born, but rather becomes, a woman.", cite: "The Second Sex, vol. II",
+    blurb: "Beauvoir showed how “woman” is made by society rather than given by nature, and argued that my freedom is bound up with the freedom of others. You value autonomy while knowing it is shaped by our situation, and you see philosophy as a tool for liberation.",
+    read: "The Ethics of Ambiguity" },
+  { id: "camus", name: "Albert Camus", short: "Camus", dates: "1913–1960", era: 4, epithet: "The Absurdist", school: "Absurdism",
+    v: [-1, -2, -0.5, 0, -1.5, 1, 0, -1, 0.5, 0.5, 0, 1.5, 1, 1.5, -2, -0.5],
+    quote: "One must imagine Sisyphus happy.", cite: "The Myth of Sisyphus",
+    blurb: "Camus faced the clash between our hunger for meaning and a silent universe, and answered with neither despair nor faith but with revolt, solidarity, and love of life. You are lucid about life’s absurdity yet fiercely attached to sun, sea, friendship, and justice.",
+    read: "The Myth of Sisyphus" },
+  { id: "arendt", name: "Hannah Arendt", short: "Arendt", dates: "1906–1975", era: 4, epithet: "The Thinker Without Banisters", school: "Political theory",
+    v: [-0.5, -1.5, -1, 0, -0.5, 0.5, 0.5, -0.5, 0, 1.5, 0.5, -1, 2, 2, -1, -0.5],
+    quote: "… the fearsome, word-and-thought-defying banality of evil.", cite: "Eichmann in Jerusalem",
+    blurb: "Arendt studied totalitarianism and the trial of Adolf Eichmann, and defended political action among equals as the highest form of human freedom. You think independently, distrust ideologies, and believe that public life, where we act and speak together, is where freedom becomes real.",
+    read: "Eichmann in Jerusalem" },
+  { id: "quine", name: "W. V. O. Quine", short: "Quine", dates: "1908–2000", era: 4, epithet: "The Naturalist", school: "Naturalism",
+    v: [-2, 1, 2, -2, -2, 0.5, 0, 0.5, -1, 0, 0, -0.5, -1, -0.5, 2, 0.5],
+    quote: "It is within science itself, and not in some prior philosophy, that reality is to be identified and described.", cite: "Theories and Things (1981), p. 21",
+    blurb: "Quine rejected the old line between truths of meaning and truths of fact, and argued that philosophy is continuous with science. You are a no-nonsense empiricist with a taste for formal precision and, as he put it, for desert landscapes in ontology.",
+    read: "“Two Dogmas of Empiricism”" },
+  { id: "murdoch", name: "Iris Murdoch", short: "Murdoch", dates: "1919–1999", era: 4, epithet: "The Attentive Moralist", school: "Moral realism",
+    v: [0.5, -0.5, -1, 1.5, 0.5, -0.5, -0.5, -1, 2, 0, 0, 0.5, -1, -0.5, -1.5, -1],
+    quote: "Love is the extremely difficult realisation that something other than oneself is real.", cite: "“The Sublime and the Good” (1959)",
+    blurb: "Murdoch, philosopher and novelist, argued that the moral life is less about dramatic choices than about learning to see others justly and lovingly. You believe the Good is real, value attention over willpower, and know that the ego is the great obstacle.",
+    read: "The Sovereignty of Good" },
+  { id: "rawls", name: "John Rawls", short: "Rawls", dates: "1921–2002", era: 4, epithet: "The Architect of Fairness", school: "Political liberalism",
+    v: [0, 2, 0, 0, -0.5, 0, 1, -2, 0, 0.5, 1, -1.5, 0.5, 0.5, 1.5, 0.5],
+    quote: "Justice is the first virtue of social institutions, as truth is of systems of thought.", cite: "A Theory of Justice §1",
+    blurb: "Rawls asked which principles of justice we would choose behind a “veil of ignorance”, not knowing our place in society. You are fair-minded and systematic, convinced that a just society must work for its least advantaged members and must never trade away basic rights for the greater good.",
+    read: "Justice as Fairness: A Restatement" },
+  { id: "foucault", name: "Michel Foucault", short: "Foucault", dates: "1926–1984", era: 4, epithet: "The Genealogist", school: "Genealogy",
+    v: [-1, -1.5, -1.5, -0.5, -2, 1.5, -0.5, 0, -2, -0.5, 2, 0.5, -0.5, 1.5, -1.5, 0.5],
+    quote: "Where there is power, there is resistance.", cite: "The History of Sexuality, vol. 1",
+    blurb: "Foucault traced how prisons, clinics, and the human sciences shape what counts as normal, true, and sane. You question official stories, notice power where others overlook it, and doubt that any value is as natural or timeless as it looks.",
+    read: "Discipline and Punish" },
+  { id: "putnam", name: "Hilary Putnam", short: "Putnam", dates: "1926–2016", era: 4, epithet: "The Mind-Changer", school: "Pragmatism · realism",
+    v: [0, -0.5, 1, 0, 0.5, -0.5, 0.5, -0.5, 1.5, 0.5, 0.5, 0, 0, 0.5, 1.5, 1],
+    quote: "If there was one great insight in pragmatism, it was the insistence that what has weight in our lives should also have weight in philosophy.", cite: "The Threefold Cord (1999), p. 70",
+    blurb: "Putnam helped launch functionalism, semantic externalism, and the brain-in-a-vat argument, and then publicly revised his own views more than once. You are rigorous but undogmatic, respect science without letting it swallow ethics, and doubt the old split between facts and values.",
+    read: "Reason, Truth and History" },
+  { id: "parfit", name: "Derek Parfit", short: "Parfit", dates: "1942–2017", era: 4, epithet: "The Reductionist", school: "Non-naturalist realism",
+    v: [2, 1.5, 0.5, -0.5, -2, -1, 1, 1, 2, 0, 0.5, -1.5, -1, -1.5, 2, 0.5],
+    quote: "When I changed my view, the walls of my glass tunnel disappeared. I now live in the open air.", cite: "Reasons and Persons (1984), §95",
+    blurb: "Parfit argued that personal identity matters far less than we think and that there are objective truths about what we have reason to do. You reason with great care, take thought experiments seriously, care about future generations, and hold that ethics is as real as mathematics.",
+    read: "Reasons and Persons, Part III" },
+  { id: "singer", name: "Peter Singer", short: "Singer", dates: "b. 1946", era: 4, epithet: "The Expanding Circle", school: "Utilitarianism",
+    v: [1, 0.5, 1.5, -1, -2, -1, 1, 2, 1.5, -1, 2, -1.5, -0.5, 2, 1.5, 0.5],
+    quote: "If it is in our power to prevent something bad from happening, without thereby sacrificing anything of comparable moral importance, we ought, morally, to do it.", cite: "“Famine, Affluence, and Morality” (1972)",
+    blurb: "Singer argues that the suffering of any being counts equally, whatever its species or location, and that the affluent should do far more to help. You follow arguments where they lead even when the conclusions are uncomfortable, and care most about reducing suffering on a large scale.",
+    read: "“Famine, Affluence, and Morality”" },
+  { id: "dennett", name: "Daniel Dennett", short: "Dennett", dates: "1942–2024", era: 4, epithet: "The Demystifier", school: "Naturalism",
+    v: [-1, 0.5, 2, -2, -2, -0.5, 1, 0.5, 0, 0, 0.5, 0, 0, 1, 0.5, 2],
+    quote: "The philosophers’ fundamental foible: mistaking a failure of imagination for an insight into necessity.", cite: "Darwin’s Dangerous Idea (1995), p. 175",
+    blurb: "Dennett set out to show how minds, meaning, and free will can arise from blind evolutionary processes. You are a confident naturalist who enjoys a good thought experiment and suspects that the “mystery” of consciousness is a trick of perspective.",
+    read: "Intuition Pumps and Other Tools for Thinking" },
+  { id: "chalmers", name: "David Chalmers", short: "Chalmers", dates: "b. 1966", era: 4, epithet: "The Hard Problem", school: "Naturalistic dualism",
+    v: [1, 1, 1, 2, -1.5, 0, 1, 0, 0, 0, 0, 0, 0, 0, 2, -2],
+    quote: "Consciousness is the biggest mystery.", cite: "The Conscious Mind (1996)",
+    blurb: "Chalmers named the “hard problem” of consciousness: why physical processes give rise to subjective experience at all. You take consciousness to be a real and irreducible part of nature, love rigorous argument and wild but serious ideas (zombies, simulations, extended minds), and think the deepest questions deserve answers.",
+    read: "The Conscious Mind" }
+];
+
+const ERAS = ["Ancient", "Medieval & Renaissance", "Early modern", "Nineteenth century", "Twentieth century & today"];
+
+function axisScores(answers) {
+  const sum = AXES.map(() => 0), den = AXES.map(() => 0);
+  QUESTIONS.forEach((q, i) => {
+    const a = answers[i];
+    if (a === null || a === undefined) return;
+    for (const [ax, w] of Object.entries(q.load)) {
+      const k = AXES.findIndex(x => x.id === ax);
+      sum[k] += a * w; den[k] += Math.abs(w);
+    }
+  });
+  return sum.map((s, k) => den[k] ? s / den[k] : 0);
+}
+
+function rankPhilosophers(u) {
+  const nu = Math.hypot(...u);
+  return PHILOSOPHERS.map(p => {
+    const np = Math.hypot(...p.v);
+    const dot = p.v.reduce((s, x, k) => s + x * u[k], 0);
+    const cos = nu > 1e-9 ? dot / (nu * np) : 0;
+    return { p, cos, pct: Math.round(50 + 50 * cos) };
+  }).sort((a, b) => b.cos - a.cos);
+}
+
+
+(function () {
+  const KEY = "which-philosopher-v1";
+  const DATA_VERSION = "1";
+  const gsr = (window.google && window.google.script && window.google.script.run) ? window.google.script.run : null;
+  const N = QUESTIONS.length;
+  const $ = id => document.getElementById(id);
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  const cap = s => s.charAt(0).toUpperCase() + s.slice(1);
+  const reduced = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  let state = { answers: Array(N).fill(null), idx: 0, screen: "intro", compareId: null, bg: null };
+  let ranked = null, scores = null;
+
+  function save() {
+    try { localStorage.setItem(KEY, JSON.stringify({ answers: state.answers, idx: state.idx, screen: state.screen, compareId: state.compareId, bg: state.bg })); } catch (e) {}
+  }
+  function load() {
+    try { const d = JSON.parse(localStorage.getItem(KEY) || "null"); return d && Array.isArray(d.answers) && d.answers.length === N ? d : null; } catch (e) { return null; }
+  }
+  const answeredCount = () => state.answers.filter(a => a !== null).length;
+  const complete = () => answeredCount() === N;
+
+  /* ---------- Intro ---------- */
+  function buildIntro() {
+    $("dimGrid").innerHTML = AXES.map(a =>
+      `<li><span class="dn">${esc(a.name)}</span><span class="dp">${esc(a.neg)}<i>–</i>${esc(a.pos)}</span></li>`).join("");
+    $("rosterList").innerHTML = ERAS.map((era, e) => {
+      const names = PHILOSOPHERS.filter(p => p.era === e).map(p => esc(p.name));
+      return `<div class="era"><h3>${esc(era)}</h3><p class="names">${names.join('<span class="dot" aria-hidden="true">·</span>')}</p></div>`;
+    }).join("");
+  }
+  function refreshIntro() {
+    const n = answeredCount();
+    const start = $("startBtn"), alt = $("altBtn"), meta = $("introMeta");
+    if (complete()) {
+      start.textContent = "See your result"; alt.hidden = false;
+      meta.textContent = "You finished the test in this browser.";
+    } else if (n > 0) {
+      start.textContent = `Continue at question ${firstUnanswered() + 1}`; alt.hidden = false;
+      meta.textContent = `${n} of ${N} answered.`;
+    } else {
+      start.textContent = "Begin the test"; alt.hidden = true;
+      meta.textContent = gsr ? "About 8 minutes." : "About 8 minutes. Your answers stay in this browser.";
+    }
+  }
+  const firstUnanswered = () => { const i = state.answers.findIndex(a => a === null); return i < 0 ? N - 1 : i; };
+
+  /* ---------- Screens ---------- */
+  function show(screen) {
+    state.screen = screen;
+    $("intro").hidden = screen !== "intro";
+    $("quiz").hidden = screen !== "quiz";
+    $("results").hidden = screen !== "results";
+    $("stats").hidden = screen !== "stats";
+    $("bgq").hidden = screen !== "bgq";
+    $("credits").hidden = screen === "quiz" || screen === "bgq";
+    $("app").classList.toggle("wide", screen === "results" || screen === "stats");
+    if (screen === "intro") refreshIntro();
+    if (screen === "quiz") renderQuestion(false);
+    if (screen === "bgq") renderBg();
+    if (screen === "results") renderResults();
+    if (screen === "stats") loadStats();
+    save();
+    window.scrollTo(0, 0);
+  }
+
+  /* ---------- Quiz ---------- */
+  const partCounts = PARTS.map((_, i) => QUESTIONS.filter(q => q.p === i).length);
+  const partStart = partCounts.map((_, i) => partCounts.slice(0, i).reduce((s, x) => s + x, 0));
+  function buildSegs() {
+    $("segs").innerHTML = partCounts.map(c => `<div class="seg" style="flex:${c}"><span></span></div>`).join("");
+    $("qTotal").textContent = N;
+  }
+  function renderQuestion(animate) {
+    const q = QUESTIONS[state.idx], part = PARTS[q.p];
+    $("partLabel").innerHTML = `<b>Part ${part.n}</b>${esc(part.title)}`;
+    $("quizPart").textContent = `${answeredCount()} answered`;
+    $("qNum").textContent = state.idx + 1;
+    [...$("segs").children].forEach((seg, i) => {
+      const done = state.answers.slice(partStart[i], partStart[i] + partCounts[i]).filter(a => a !== null).length;
+      seg.firstElementChild.style.width = (done / partCounts[i] * 100) + "%";
+    });
+    const body = $("qBody");
+    if (q.t === "pair") {
+      body.innerHTML = `<p class="prompt stem" id="qText">${esc(q.q)}</p>
+        <div class="pair" style="margin-top:18px"><p class="pl">${esc(q.l)}</p><p class="pr">${esc(q.r)}</p></div>`;
+      $("scaleLabels").innerHTML = `<span class="sl"></span><span class="sm">Both / neither</span><span class="sr"></span>`;
+    } else {
+      body.innerHTML = `<p class="prompt" id="qText">${esc(q.q)}</p>`;
+      $("scaleLabels").innerHTML = `<span class="sl">Disagree</span><span class="sm">Neutral</span><span class="sr">Agree</span>`;
+    }
+    const labelsAgree = ["Strongly disagree", "Disagree", "Neutral", "Agree", "Strongly agree"];
+    const labelsPair = [`Strongly: ${q.l}`, `Somewhat: ${q.l}`, "Both or neither", `Somewhat: ${q.r}`, `Strongly: ${q.r}`];
+    const cur = state.answers[state.idx];
+    [...$("scale").children].forEach((b, i) => {
+      const v = Number(b.dataset.v);
+      b.setAttribute("aria-checked", String(cur === v));
+      b.setAttribute("aria-label", (q.t === "pair" ? labelsPair : labelsAgree)[i]);
+      b.tabIndex = (cur === null ? v === 0 : cur === v) ? 0 : -1;
+    });
+    $("backBtn").disabled = state.idx === 0;
+    $("nextBtn").disabled = cur === null;
+    $("nextBtn").textContent = state.idx === N - 1 && complete() ? "See result →" : "Next →";
+    if (animate && !reduced) { const c = $("qcard"); c.classList.remove("fade-in"); void c.offsetWidth; c.classList.add("fade-in"); }
+  }
+  let advanceTimer = null;
+  function answer(v) {
+    clearTimeout(advanceTimer);
+    state.answers[state.idx] = v;
+    save();
+    renderQuestion(false);
+    advanceTimer = setTimeout(() => {
+      if (complete() && (state.idx === N - 1 || state.answers.slice(state.idx + 1).every(a => a !== null))) { finish(); return; }
+      if (state.idx < N - 1) { state.idx++; save(); renderQuestion(true); }
+    }, reduced ? 60 : 230);
+  }
+  function go(delta) {
+    clearTimeout(advanceTimer);
+    const next = state.idx + delta;
+    if (delta > 0 && state.answers[state.idx] === null) return;
+    if (next >= N) { if (complete()) finish(); return; }
+    if (next < 0) return;
+    state.idx = next; save(); renderQuestion(true);
+  }
+
+  /* ---------- Optional background question (online version only) ---------- */
+  function finish() { show(gsr && state.bg == null ? "bgq" : "results"); }
+  function renderBg() {
+    document.querySelectorAll(".bg-opt").forEach(b => b.setAttribute("aria-checked", String(Number(b.dataset.bg) === state.bg)));
+  }
+
+  /* ---------- Results ---------- */
+  function compute() {
+    scores = axisScores(state.answers);
+    let u = scores.slice();
+    const norm = Math.hypot(...u);
+    if (norm < 1e-6) u = AXES.map(a => a.id === "doubt" ? 0.01 : 0);
+    ranked = rankPhilosophers(u);
+    return norm;
+  }
+  function poleText(k, val) { return val >= 0 ? AXES[k].posText : AXES[k].negText; }
+
+  function renderResults() {
+    const norm = compute();
+    const top = ranked[0], p = top.p;
+    if (!state.compareId || !PHILOSOPHERS.some(x => x.id === state.compareId)) state.compareId = p.id;
+
+    $("rPct").textContent = `${top.pct}% match`;
+    $("rName").textContent = p.name;
+    $("rEpithet").textContent = p.epithet;
+    $("rMeta").textContent = ` · ${p.dates} · ${p.school}`;
+    $("rQuote").textContent = `“${p.quote}”`;
+    $("rCite").textContent = p.cite;
+    $("rBlurb").textContent = p.blurb;
+    $("rRead").textContent = p.read;
+    const note = $("rNote");
+    if (norm < 0.25) { note.hidden = false; note.textContent = "Your answers were almost perfectly balanced, which is itself a philosophical position. The match below is a gentle one."; }
+    else note.hidden = true;
+
+    const prod = AXES.map((a, k) => ({ k, s: scores[k] * p.v[k] }));
+    const firm = x => Math.abs(scores[x.k]) >= 0.35 && Math.abs(p.v[x.k]) >= 0.5;
+    const agree = prod.filter(x => x.s > 0.3 && firm(x)).sort((a, b) => b.s - a.s).slice(0, 3);
+    const argue = prod.filter(x => x.s < -0.3 && firm(x)).sort((a, b) => a.s - b.s).slice(0, 2);
+    $("agreeH").textContent = `Where you agree with ${p.short}`;
+    $("argueH").textContent = `Where you’d argue with ${p.short}`;
+    $("agreeList").innerHTML = agree.length
+      ? agree.map(x => `<li><span>${esc(cap(poleText(x.k, p.v[x.k])))}.</span></li>`).join("")
+      : `<li class="empty"><span>No single dimension stands out; your overlap is broad but shallow.</span></li>`;
+    $("argueList").innerHTML = argue.length
+      ? argue.map(x => `<li><span>You think ${esc(poleText(x.k, scores[x.k]))}; ${esc(p.short)} holds that ${esc(poleText(x.k, p.v[x.k]))}.</span></li>`).join("")
+      : `<li class="empty"><span>Nothing serious. You two would get along.</span></li>`;
+
+    $("runners").innerHTML = ranked.slice(1, 5).map((r, i) => cardHTML(r, i + 2)).join("");
+    const opp = ranked[ranked.length - 1];
+    $("opposite").innerHTML = `<span>Your philosophical opposite:</span><button class="linkbtn" type="button" data-cmp="${opp.p.id}">${esc(opp.p.name)}</button><span>${opp.pct}% match</span>`;
+
+    $("ranking").innerHTML = ranked.map((r, i) =>
+      `<li><button class="rk-btn" type="button" data-cmp="${r.p.id}" aria-pressed="false"><span class="n">${i + 1}</span><span class="nm">${esc(r.p.name)}</span><span class="bar"><span style="width:${r.pct}%"></span></span><span class="p">${r.pct}%</span></button></li>`).join("");
+
+    renderCompare();
+    $("crowd").hidden = !gsr;
+    autoSubmit();
+    if (gsr) getCrowd(d => { if (state.screen === "results" && crowdOK(d)) renderCompare(); });
+  }
+  const answersKey = () => state.answers.join(",");
+  let submitting = false;
+  function autoSubmit() {
+    if (!gsr || !complete() || !ranked || submitting) return;
+    const key = answersKey();
+    try { if (localStorage.getItem(KEY + ":recorded") === key) return; } catch (e) {}
+    submitting = true;
+    const payload = {
+      version: DATA_VERSION,
+      answers: state.answers.slice(),
+      top: ranked.slice(0, 5).map(r => ({ id: r.p.id, pct: r.pct })),
+      sims: ranked.map(r => ({ id: r.p.id, pct: r.pct })),
+      background: state.bg || 0
+    };
+    gsr.withSuccessHandler(() => {
+      submitting = false;
+      try { localStorage.setItem(KEY + ":recorded", key); } catch (e) {}
+    }).withFailureHandler(() => { submitting = false; }).record(payload);
+  }
+
+  /* ---------- Statistics ---------- */
+  const ANSWER_LABELS = ["Strongly disagree", "Disagree", "Neutral", "Agree", "Strongly agree"];
+  const PAIR_LABELS = q => ["Strongly: " + q.l, "Somewhat: " + q.l, "Both or neither", "Somewhat: " + q.r, "Strongly: " + q.r];
+  const pctStr = x => (x < 1 && x > 0 ? "<1" : String(Math.round(x))) + "%";
+  const fmtR = r => r == null ? "–" : (r < 0 ? "−" : "") + Math.abs(r).toFixed(2);
+  const sumArr = a => a.reduce((s, x) => s + x, 0);
+  const meanOf = c => { const t = sumArr(c); return t ? c.reduce((s, x, k) => s + x * (k - 2), 0) / t : 0; };
+  const sides = c => { const t = sumArr(c) || 1; return { left: (c[0] + c[1]) / t * 100, right: (c[3] + c[4]) / t * 100 }; };
+  const crowdOK = d => !!(d && !d.insufficient);
+  const sect = (id, title, body) => `<section class="sect" aria-labelledby="${id}"><div class="sect-head"><h2 id="${id}">${title}</h2></div>${body}</section>`;
+
+  // One request serves both the result page and the statistics page.
+  let crowd = null, crowdAt = 0, crowdWaiting = [];
+  function getCrowd(cb) {
+    if (!gsr) { cb(null); return; }
+    if (crowd && Date.now() - crowdAt < 120000) { cb(crowd); return; }
+    crowdWaiting.push(cb);
+    if (crowdWaiting.length > 1) return;
+    const done = d => { const w = crowdWaiting; crowdWaiting = []; w.forEach(f => f(d)); };
+    gsr.withSuccessHandler(d => { crowd = d || null; crowdAt = Date.now(); done(crowd); })
+      .withFailureHandler(() => done(undefined)).getStats();
+  }
+
+  // Dimension distributions: vals is a list of [score, count].
+  function axShare(vals, x) {
+    let lo = 0, eq = 0, hi = 0;
+    vals.forEach(([v, c]) => { if (v < x - 1e-6) lo += c; else if (v > x + 1e-6) hi += c; else eq += c; });
+    return { lo, eq, hi, tot: lo + eq + hi };
+  }
+  function axisLine(k, you, vals) {
+    const a = AXES[k], s = axShare(vals, you);
+    if (!s.tot) return "";
+    if (Math.abs(you) < 1e-6) {
+      const neg = vals.filter(([v]) => v < -1e-6).reduce((t, [, c]) => t + c, 0), pos = vals.filter(([v]) => v > 1e-6).reduce((t, [, c]) => t + c, 0);
+      return `In the middle: ${pctStr(neg / s.tot * 100)} lean toward ${a.neg}, ${pctStr(pos / s.tot * 100)} toward ${a.pos}`;
+    }
+    return you > 0 ? `Further toward ${a.pos} than ${pctStr(s.lo / s.tot * 100)} of people`
+                   : `Further toward ${a.neg} than ${pctStr(s.hi / s.tot * 100)} of people`;
+  }
+  function kdePath(vals) {
+    const ys = [], h = 0.28;
+    let mx = 0;
+    for (let i = 0; i <= 40; i++) {
+      const x = -2 + i * 0.1;
+      let d = 0;
+      vals.forEach(([v, c]) => { const z = (x - v) / h; d += c * Math.exp(-0.5 * z * z); });
+      ys.push(d); mx = Math.max(mx, d);
+    }
+    return "M0,20 L" + ys.map((d, i) => `${(i * 2.5).toFixed(1)},${(20 - d / (mx || 1) * 19).toFixed(2)}`).join(" L") + " L100,20 Z";
+  }
+  function quantRank(qs, x) {
+    if (!qs || !qs.length) return 50;
+    const last = qs.length - 1;
+    if (x <= qs[0]) return 0;
+    if (x >= qs[last]) return 100;
+    for (let k = 0; k < last; k++) if (x <= qs[k + 1]) { const span = qs[k + 1] - qs[k]; return (k + (span > 0 ? (x - qs[k]) / span : 0.5)) / last * 100; }
+    return 100;
+  }
+
+  function qHead(q) {
+    return q.t === "pair"
+      ? `<p class="qt">${esc(q.q)}</p><div class="ends"><span class="l">${esc(q.l)}</span><span class="r">${esc(q.r)}</span></div>`
+      : `<p class="qt">${esc(q.q)}</p>`;
+  }
+  function stackBar(q, counts, mine, label) {
+    const total = sumArr(counts) || 1, names = q.t === "pair" ? PAIR_LABELS(q) : ANSWER_LABELS;
+    const segs = counts.map((c, k) => {
+      const share = c / total * 100, v = k - 2;
+      return share > 0 ? `<span class="s${v}${mine === v ? " you" : ""}" style="width:${share.toFixed(2)}%" title="${esc(names[k] + ": " + pctStr(share))}">${share >= 9 ? pctStr(share) : ""}</span>` : "";
+    }).join("");
+    return `<div class="stack" role="img" aria-label="${esc((label ? label + ": " : "") + counts.map((c, k) => names[k] + " " + pctStr(c / total * 100)).join(", "))}">${segs}</div>`;
+  }
+  const sideText = (q, c) => { const s = sides(c); return q.t === "pair" ? `${pctStr(s.left)} lean to “${q.l}”, ${pctStr(s.right)} to “${q.r}”` : `${pctStr(s.left)} disagree, ${pctStr(s.right)} agree`; };
+  const majorityText = (q, c) => { const s = sides(c), right = s.right >= s.left, share = right ? s.right : s.left; return q.t === "pair" ? `${pctStr(share)} prefer “${right ? q.r : q.l}”` : `${pctStr(share)} ${right ? "agree" : "disagree"}`; };
+  const stance = (q, sgn) => q.t === "pair" ? `answer “${esc(q.q)}” with “${esc(sgn > 0 ? q.r : q.l)}”` : `${sgn > 0 ? "agree" : "disagree"} that “${esc(q.q.replace(/[.…]+$/, ""))}”`;
+  const pctTrack = (p, lo, hi, label) => `<div class="ptrack" role="img" aria-label="${esc(label)}"><div class="pbar"><span class="pfill" style="width:${p.toFixed(1)}%"></span><span class="pmk" style="left:${p.toFixed(1)}%"></span></div><div class="pends"><span>${esc(lo)}</span><span>${esc(hi)}</span></div></div>`;
+
+  function loadStats() {
+    $("statsMeta").textContent = "Loading the statistics…";
+    $("statsBody").innerHTML = "";
+    if (!gsr) { $("statsMeta").textContent = "Statistics are only available in the online version of the test."; return; }
+    getCrowd(d => {
+      if (d === undefined) { if (state.screen === "stats") $("statsMeta").textContent = "The statistics could not be loaded. Please try again in a moment."; return; }
+      renderStats(d);
+    });
+  }
+  function renderStats(data) {
+    if (state.screen !== "stats") return;
+    if (complete() && !ranked) compute();
+    if (!crowdOK(data)) {
+      const n = data ? data.n : 0, minN = data ? data.minN : 8;
+      $("statsMeta").textContent = `The statistics appear once at least ${minN} people have taken the test. So far: ${n}.`;
+      return;
+    }
+    const when = data.updated ? new Date(data.updated).toLocaleString([], { dateStyle: "medium", timeStyle: "short" }) : "";
+    $("statsMeta").textContent = `Based on ${data.n.toLocaleString()} completed tests${when ? `, as of ${when}` : ""}. The figures update every few minutes.`;
+    const mine = complete() && ranked;
+    const parts = [];
+    const add = f => { try { parts.push(f()); } catch (e) { /* skip a section rather than break the page */ } };
+    if (mine) add(() => youSection(data));
+    add(() => matchesSection(data, mine ? ranked[0].p.id : null));
+    add(() => splitSection(data));
+    add(() => togetherSection(data));
+    add(() => coherenceSection(data));
+    add(() => questionsSection(data));
+    $("statsBody").innerHTML = parts.join("");
+  }
+
+  function youSection(d) {
+    const cards = [];
+    const card = (title, text, p, lo, hi, sub) => `<div class="ycard"><h3 class="label">${title}</h3><p class="yt">${text}</p>${pctTrack(p, lo, hi, `${lo} to ${hi}: you are at ${Math.round(p)} out of 100`)}${sub ? `<p class="ys">${sub}</p>` : ""}</div>`;
+    if (Array.isArray(d.topPct)) {
+      const my = ranked[0].pct, tot = sumArr(d.topPct) || 1;
+      const lower = d.topPct.slice(0, my).reduce((s, x) => s + x, 0) / tot * 100;
+      let cum = 0, median = 0;
+      for (let v = 0; v <= 100; v++) { cum += d.topPct[v] || 0; if (cum >= tot / 2) { median = v; break; } }
+      cards.push(card("Your match strength", `Your closest match, ${esc(ranked[0].p.short)} at ${my}%, is closer than the closest match of ${pctStr(lower)} of people.`, lower, "Weaker", "Stronger", `The typical closest match is ${median}%.`));
+    }
+    if (Array.isArray(d.qMean) && Array.isArray(d.dQuant)) {
+      const myD = Math.sqrt(state.answers.reduce((s, a, i) => s + (a - d.qMean[i]) * (a - d.qMean[i]), 0));
+      const r = quantRank(d.dQuant, myD);
+      cards.push(card("How unusual you are", `Your answers are more unusual than those of ${pctStr(r)} of people.`, r, "Typical", "Unusual", "Measured by how far your 54 answers lie from everyone’s average answers."));
+    }
+    if (d.ax && Array.isArray(d.ax.vals)) {
+      let best = null;
+      AXES.forEach((a, k) => {
+        const s = axShare(d.ax.vals[k] || [], scores[k]);
+        if (!s.tot) return;
+        const p = (s.lo + s.eq / 2) / s.tot * 100;
+        if (!best || Math.abs(p - 50) > Math.abs(best.p - 50)) best = { k, p };
+      });
+      if (best) {
+        const a = AXES[best.k];
+        cards.push(card("Where you stand out most", `${esc(a.name)}: ${esc(axisLine(best.k, scores[best.k], d.ax.vals[best.k]).replace(/^./, c => c.toLowerCase()))}.`, best.p, a.neg, a.pos, ""));
+      }
+    }
+    return cards.length ? sect("youH", "You among everyone", `<div class="ycards">${cards.join("")}</div>`) : "";
+  }
+
+  function matchesSection(d, myTop) {
+    const n = d.n;
+    const rows = PHILOSOPHERS.map(p => ({ p, top: (d.top[p.id] || 0) / n * 100, avg: d.sim[p.id] }))
+      .sort((a, b) => (b.top - a.top) || ((b.avg || 0) - (a.avg || 0)));
+    const maxTop = Math.max(1, ...rows.map(r => r.top));
+    return sect("phH", "Who people matched", `
+        <p class="sect-intro">“Top” is the share of people whose closest philosopher this was. “Average” is everyone’s mean similarity to this philosopher on the 0–100 scale.${myTop ? " Your own top match is highlighted." : ""}</p>
+        <div class="ph-head"><span></span><span>Philosopher</span><span class="barh"></span><span class="r">Top</span><span class="r">Average</span></div>
+        <ol class="ph-list">${rows.map((r, i) => `<li class="ph-row${r.p.id === myTop ? " mine" : ""}"><span class="n">${i + 1}</span><span class="nm">${esc(r.p.name)}</span><span class="bar"><span style="width:${(r.top / maxTop * 100).toFixed(1)}%"></span></span><span class="v r">${pctStr(r.top)}</span><span class="avg r">${r.avg == null ? "–" : Math.round(r.avg) + "%"}</span></li>`).join("")}</ol>`);
+  }
+
+  function splitSection(d) {
+    const st = QUESTIONS.map((q, i) => {
+      const c = d.q[i] || [0, 0, 0, 0, 0], t = sumArr(c) || 1, m = meanOf(c), s = sides(c);
+      return { q, i, c, sd: Math.sqrt(c.reduce((acc, x, k) => acc + x * (k - 2 - m) * (k - 2 - m), 0) / t), agree: Math.max(s.left, s.right) };
+    });
+    const div = st.slice().sort((a, b) => b.sd - a.sd).slice(0, 5);
+    const used = new Set(div.map(x => x.i));
+    const agr = st.filter(x => !used.has(x.i)).sort((a, b) => (b.agree - a.agree) || (a.sd - b.sd)).slice(0, 5);
+    const item = (x, cap) => `<div class="ans-q">${qHead(x.q)}${stackBar(x.q, x.c, state.answers[x.i])}<p class="yours">${esc(cap)}.</p></div>`;
+    return sect("splitH", "Where people split, and where they agree", `
+      <div class="two-col">
+        <div class="col"><h3 class="label">Most divisive</h3>${div.map(x => item(x, sideText(x.q, x.c))).join("")}</div>
+        <div class="col"><h3 class="label">Most agreement</h3>${agr.map(x => item(x, majorityText(x.q, x.c))).join("")}</div>
+      </div>`);
+  }
+
+  function togetherSection(d) {
+    const title = "What goes together", minNCorr = d.minNCorr || 100;
+    if (!d.corr) return sect("togH", title, `<p class="stats-note">This part shows which views tend to go together. Correlations need many responses to be reliable, so it appears once at least ${minNCorr} people have taken the test. So far: ${d.n}.</p>`);
+    const strong = x => Math.abs(x[2]) >= 0.1;
+    const axP = (d.corr.axPairs || []).filter(strong).slice(0, 5), links = (d.corr.links || []).filter(strong).slice(0, 6);
+    const chip = r => `<span class="rchip">r = ${fmtR(r)}</span>`;
+    const axHTML = axP.length
+      ? `<ul class="links">${axP.map(([a, b, r]) => { const A = AXES[a], B = AXES[b]; return `<li><p>People who lean toward <b>${esc(A.pos)}</b> <span class="dimn">(${esc(A.name)})</span> also tend to lean toward <b>${esc(r > 0 ? B.pos : B.neg)}</b> <span class="dimn">(${esc(B.name)})</span>.</p>${chip(r)}</li>`; }).join("")}</ul>`
+      : `<p class="stats-note">So far, no two dimensions are noticeably linked.</p>`;
+    const lkHTML = links.length
+      ? `<ul class="links">${links.map(([i, j, r]) => `<li><p>People who ${stance(QUESTIONS[i], 1)} tend to ${stance(QUESTIONS[j], r)}.</p>${chip(r)}</li>`).join("")}</ul>`
+      : `<p class="stats-note">So far, no questions from different dimensions are noticeably linked.</p>`;
+    return sect("togH", title, `
+      <h3 class="label">Dimensions</h3>${axHTML}
+      <h3 class="label sub">Questions from different dimensions</h3>${lkHTML}
+      <p class="fine-note">r is the correlation, from −1 to 1; as a rough guide, 0.1 is weak, 0.3 moderate and 0.5 strong. Correlations describe tendencies across everyone, not rules for individuals. For the dimensions, a question that belongs to two of them counts only for its main one, so that it can’t create a link by itself.</p>`);
+  }
+
+  function coherenceSection(d) {
+    const title = "How well the dimensions hang together", minNCorr = d.minNCorr || 100;
+    if (!d.corr) return sect("cohH", title, `<p class="stats-note">This part checks whether the questions on each dimension measure one thing. It appears once at least ${minNCorr} people have taken the test. So far: ${d.n}.</p>`);
+    const c = d.corr.coh;
+    const scale = v => Math.max(0, Math.min(100, v / 0.8 * 100)).toFixed(1);
+    const verdict = v => v == null ? "–" : v < 0.15 ? "Loose" : v <= 0.5 ? "Coherent" : "Very tight";
+    const rows = AXES.map((a, k) => ({ a, k, w: c.within[k], o: c.outside[k], m: (c.items || [])[k] }))
+      .sort((x, y) => (y.w == null ? -9 : y.w) - (x.w == null ? -9 : x.w));
+    const list = `<ul class="coh-list">${rows.map(x => `<li class="coh-row">
+        <span class="an">${esc(x.a.name)}</span>
+        <span class="cbar" role="img" aria-label="${esc(x.a.name)}: same dimension r = ${fmtR(x.w)}, other dimensions ${fmtR(x.o)}"><span class="cfill${x.w != null && x.w < 0.15 ? " weak" : ""}" style="width:${x.w == null ? 0 : scale(x.w)}%"></span><span class="cguide" style="left:${scale(0.15)}%"></span>${x.o == null ? "" : `<span class="cout" style="left:${scale(x.o)}%"></span>`}</span>
+        <span class="cv">${fmtR(x.w)}</span><span class="cverd">${verdict(x.w)}</span></li>`).join("")}</ul>`;
+    return sect("cohH", title, `
+      <p class="sect-intro">Each dimension is measured by three to five questions. If they capture one underlying view, answers to them should hang together, and more closely than answers to questions from other dimensions. On average, questions on the same dimension correlate at r = ${fmtR(c.withinAll)}; questions on different dimensions at ${fmtR(c.outsideAll)} (ignoring the sign).</p>
+      <div class="legend"><span><i class="sw-in"></i>Same dimension: average correlation</span><span><i class="sw-out"></i>Other dimensions</span><span><i class="sw-guide"></i>0.15</span></div>
+      ${list}
+      <p class="fine-note">Rule of thumb: an average correlation between about 0.15 and 0.50 suggests that a set of questions measures one thing (Clark &amp; Watson, 1995). Questions that point the other way are flipped first, and a question that belongs to two dimensions counts for both. The scale runs from 0 to 0.8.</p>`);
+  }
+
+  function questionsSection(d) {
+    const legend = `<div class="ans-legend">${ANSWER_LABELS.map((l, i) => `<span><i style="background:var(--a${i - 2})"></i>${l}</span>`).join("")}</div>
+      <p class="bl" style="color:var(--ink-2);font-size:var(--s-1)">For either-or questions, the colours run from the left-hand option (blue) to the right-hand one (gold). Your own answer is outlined.</p>`;
+    const parts = PARTS.map((part, pi) => {
+      const qs = QUESTIONS.map((q, qi) => ({ q, qi })).filter(x => x.q.p === pi);
+      return `<div class="ans-part"><h3><b>Part ${part.n}</b>${esc(part.title)}</h3>${qs.map(({ q, qi }) => {
+        const counts = d.q[qi] || [0, 0, 0, 0, 0], total = sumArr(counts) || 1, mine = state.answers[qi];
+        const myLabel = mine == null ? "" : (q.t === "pair" ? ["strongly the first option", "somewhat the first option", "both or neither", "somewhat the second option", "strongly the second option"][mine + 2] : ANSWER_LABELS[mine + 2].toLowerCase());
+        return `<div class="ans-q">${qHead(q)}${stackBar(q, counts, mine)}${mine == null ? "" : `<p class="yours">Your answer: ${esc(myLabel)}. ${pctStr(counts[mine + 2] / total * 100)} of people answered the same.</p>`}</div>`;
+      }).join("")}</div>`;
+    }).join("");
+    return sect("ansH", "Answers to each question", `${legend}<div style="display:grid;gap:36px">${parts}</div>`);
+  }
+  function cardHTML(r, rank) {
+    return `<button class="pcard" type="button" data-cmp="${r.p.id}" aria-pressed="false"><span class="rk"><span>No. ${rank}</span><b>${r.pct}%</b></span><span class="nm">${esc(r.p.name)}</span><span class="ep">${esc(r.p.epithet)}</span></button>`;
+  }
+  function renderCompare() {
+    const r = ranked.find(x => x.p.id === state.compareId) || ranked[0];
+    const p = r.p, isTop = r === ranked[0];
+    $("cmpH").textContent = `You and ${p.short}`;
+    $("legendName").textContent = p.short;
+    $("cmpCard").innerHTML = isTop
+      ? `<p class="bl">Your answers placed you on each dimension (filled dot). The ring shows where ${esc(p.short)} stands. Pick anyone above or below to compare.</p>`
+      : `<div class="who"><span class="nm">${esc(p.name)}</span><span class="ep">${esc(p.epithet)}</span><span class="dt">${esc(p.dates)} · ${r.pct}% match · No. ${ranked.indexOf(r) + 1}</span></div>
+         <p class="bl">${esc(p.blurb)}</p>
+         <p class="bl" style="font-family:var(--display);font-style:italic;color:var(--ink)">“${esc(p.quote)}” <span style="font-family:var(--body);font-style:normal;font-size:var(--s-1);letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2)">${esc(p.cite)}</span></p>`;
+    const pos = v => ((v + 2) / 4 * 100).toFixed(2);
+    const dist = crowdOK(crowd) && crowd.ax && Array.isArray(crowd.ax.vals) ? crowd.ax.vals : null;
+    $("legendCrowd").hidden = !dist;
+    if (dist && isTop) $("cmpCard").insertAdjacentHTML("beforeend", `<p class="bl">The shaded curve shows how everyone who took the test is spread along each dimension.</p>`);
+    $("chart").innerHTML = AXES.map((a, k) => {
+      const you = scores[k], them = p.v[k];
+      const lo = Math.min(you, them), hi = Math.max(you, them);
+      const leanNeg = you <= -0.5 ? " lean" : "", leanPos = you >= 0.5 ? " lean" : "";
+      const line = dist ? axisLine(k, you, dist[k] || []) : "";
+      return `<div class="row${line ? " with-pctl" : ""}" role="img" aria-label="${esc(a.name)}: you ${you.toFixed(1)}, ${esc(p.short)} ${them.toFixed(1)}, on a scale from ${esc(a.neg)} (−2) to ${esc(a.pos)} (+2).${line ? " " + esc(line) + "." : ""}">
+        <span class="an">${esc(a.name)}</span>
+        <span class="neg${leanNeg}">${esc(a.neg)}</span>
+        <div class="track${dist ? " has-dist" : ""}">${dist ? `<svg class="dist" viewBox="0 0 100 20" preserveAspectRatio="none" aria-hidden="true"><path d="${kdePath(dist[k] || [])}"/></svg>` : ""}<span class="tick" style="left:25%"></span><span class="tick" style="left:75%"></span><span class="mid"></span>
+          <span class="gap" style="left:${pos(lo)}%;width:${(pos(hi) - pos(lo)).toFixed(2)}%"></span>
+          <span class="mk them" style="left:${pos(them)}%"></span><span class="mk you" style="left:${pos(you)}%"></span></div>
+        <span class="pos${leanPos}">${esc(a.pos)}</span>${line ? `<span class="pctl">${esc(line)}</span>` : ""}</div>`;
+    }).join("");
+    document.querySelectorAll("[data-cmp]").forEach(b => { if (b.hasAttribute("aria-pressed")) b.setAttribute("aria-pressed", String(b.dataset.cmp === p.id)); });
+  }
+
+  function resultText() {
+    const top = ranked[0];
+    const next = ranked.slice(1, 4).map(r => `${r.p.name} ${r.pct}%`).join(", ");
+    return `My philosopher match: ${top.p.name}, “${top.p.epithet}” (${top.pct}%).\n“${top.p.quote}” (${top.p.cite})\nAlso close: ${next}. Opposite: ${ranked[ranked.length - 1].p.name}.\nFrom the test “Which Philosopher Are You?”: https://leonard109090602.github.io/which-philosopher/`;
+  }
+
+  /* ---------- Events ---------- */
+  $("startBtn").addEventListener("click", () => {
+    if (complete()) { finish(); return; }
+    state.idx = firstUnanswered(); show("quiz");
+  });
+  let altArmed = false, altTimer = null;
+  $("altBtn").addEventListener("click", e => {
+    if (!altArmed) { altArmed = true; e.currentTarget.textContent = "Click again to clear answers"; clearTimeout(altTimer); altTimer = setTimeout(() => { altArmed = false; $("altBtn").textContent = "Start over"; }, 4000); return; }
+    altArmed = false; $("altBtn").textContent = "Start over";
+    state.answers = Array(N).fill(null); state.idx = 0; state.compareId = null; state.bg = null; show("quiz");
+  });
+  document.querySelectorAll("[data-home]").forEach(b => b.addEventListener("click", () => show("intro")));
+  $("scale").addEventListener("click", e => { const b = e.target.closest(".opt"); if (b) answer(Number(b.dataset.v)); });
+  $("scale").addEventListener("keydown", e => {
+    const opts = [...$("scale").children], i = opts.indexOf(document.activeElement);
+    if (i < 0) return;
+    if (e.key === "ArrowRight" || e.key === "ArrowDown") { e.preventDefault(); e.stopPropagation(); opts[Math.min(4, i + 1)].focus(); }
+    if (e.key === "ArrowLeft" || e.key === "ArrowUp") { e.preventDefault(); e.stopPropagation(); opts[Math.max(0, i - 1)].focus(); }
+  });
+  $("backBtn").addEventListener("click", () => go(-1));
+  $("nextBtn").addEventListener("click", () => go(1));
+  document.addEventListener("keydown", e => {
+    if (state.screen !== "quiz" || e.metaKey || e.ctrlKey || e.altKey) return;
+    if (/^[1-5]$/.test(e.key)) { e.preventDefault(); answer(Number(e.key) - 3); }
+    else if (e.key === "ArrowLeft" && !e.target.closest(".scale")) { e.preventDefault(); go(-1); }
+    else if (e.key === "ArrowRight" && !e.target.closest(".scale")) { e.preventDefault(); go(1); }
+  });
+  $("results").addEventListener("click", e => {
+    const b = e.target.closest("[data-cmp]");
+    if (!b) return;
+    state.compareId = b.dataset.cmp; save(); renderCompare();
+    const sect = $("compareSect");
+    if (sect.getBoundingClientRect().top < 0 || sect.getBoundingClientRect().top > window.innerHeight * 0.6) sect.scrollIntoView({ behavior: reduced ? "auto" : "smooth", block: "start" });
+  });
+  $("copyBtn").addEventListener("click", () => {
+    const text = resultText(), out = $("copyOut");
+    const fallback = () => { out.hidden = false; out.value = text; out.focus(); out.select(); $("status").textContent = "Select and copy the text below."; };
+    try {
+      navigator.clipboard.writeText(text).then(() => { out.hidden = true; $("status").textContent = "Copied to clipboard"; setTimeout(() => $("status").textContent = "", 2500); }, fallback);
+    } catch (err) { fallback(); }
+  });
+  $("statsBtn").addEventListener("click", () => show("stats"));
+  $("bgOpts").addEventListener("click", e => { const b = e.target.closest(".bg-opt"); if (!b) return; state.bg = Number(b.dataset.bg); renderBg(); setTimeout(() => show("results"), reduced ? 0 : 180); });
+  $("bgSkip").addEventListener("click", () => { state.bg = 0; show("results"); });
+  $("bgBack").addEventListener("click", () => { state.idx = N - 1; show("quiz"); });
+  $("statsBack").addEventListener("click", () => show(complete() ? "results" : "intro"));
+  let retakeArmed = false, retakeTimer = null;
+  $("retakeBtn").addEventListener("click", e => {
+    if (!retakeArmed) { retakeArmed = true; e.currentTarget.textContent = "Click again to clear answers"; clearTimeout(retakeTimer); retakeTimer = setTimeout(() => { retakeArmed = false; $("retakeBtn").textContent = "Retake the test"; }, 4000); return; }
+    retakeArmed = false; $("retakeBtn").textContent = "Retake the test";
+    state.answers = Array(N).fill(null); state.idx = 0; state.compareId = null; state.bg = null; $("copyOut").hidden = true; show("quiz");
+  });
+
+  /* ---------- Boot ---------- */
+  function start(data) {
+    buildIntro(); buildSegs();
+    const d = (data && Array.isArray(data.answers) && data.answers.length === N) ? data : load();
+    if (d) {
+      state.answers = d.answers.map(a => Number.isFinite(Number(a)) && a !== null && a !== "" ? Math.max(-2, Math.min(2, Math.round(Number(a)))) : null);
+      state.idx = Math.max(0, Math.min(N - 1, d.idx || 0));
+      state.compareId = d.compareId || null;
+      state.bg = [0, 1, 2, 3, 4].includes(d.bg) ? d.bg : null;
+    }
+    let screen = d && d.screen ? d.screen : "intro";
+    if (!["intro", "quiz", "bgq", "results", "stats"].includes(screen)) screen = "intro";
+    if ((screen === "results" || screen === "stats" || screen === "bgq") && !complete()) screen = "intro";
+    if ((screen === "stats" || screen === "bgq") && !gsr) screen = "results";
+    show(screen);
+  }
+  window.claude?.hot?.snapshot?.(() => ({ answers: state.answers, idx: state.idx, screen: state.screen, compareId: state.compareId, bg: state.bg }));
+  window.claude?.hot?.ready ? window.claude.hot.ready(start) : start(window.claude?.hot?.data ?? {});
+})();
+</script>
+</body>
+</html>
