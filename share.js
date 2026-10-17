@@ -50,15 +50,11 @@
   function say(msg) { const s = $("status"); if (!s) return; s.textContent = msg; setTimeout(() => { if (s.textContent === msg) s.textContent = ""; }, 2500); }
   function open(url) { window.open(url, "_blank", "noopener,noreferrer,width=620,height=680"); }
   const enc = encodeURIComponent;
-  // On phones, Facebook's web share page opens the Facebook app without the post, so the Facebook
-  // button uses the phone's own share menu there (pick Facebook in it).
-  const phone = !!(window.matchMedia && window.matchMedia("(pointer: coarse)").matches);
+  // On iPhones with the Facebook app, facebook.com links open in the app, which drops the share.
+  // Facebook's app-link rules exclude URLs ending in #no_universal_links, so this one opens
+  // Facebook's share page in the browser instead (harmless everywhere else).
   function shareFacebook(r) {
-    if (phone && navigator.share) {
-      navigator.share({ title: "Which Philosopher Are You?", text: r.text, url: r.link }).catch(() => {});
-    } else {
-      open(`https://${phone ? "m" : "www"}.facebook.com/sharer/sharer.php?u=${enc(r.link)}`);
-    }
+    open(`https://www.facebook.com/sharer/sharer.php?u=${enc(r.link)}#no_universal_links`);
   }
 
   row.addEventListener("click", e => {
